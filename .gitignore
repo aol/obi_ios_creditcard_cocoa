@@ -1,0 +1,33 @@
+# OS X
+.DS_Store
+
+# Xcode
+build/
+Pods/
+Podfile.lock
+
+*.mode1
+*.mode1v3
+*.mode2v3
+*.perspective
+*.perspectivev3
+*.pbxuser
+*.xcworkspace
+# *.xcodeproj/
+*.moved-aside
+*.xccheckout
+*.hmap
+*.ipa
+*.xcuserstate
+
+xcuserdata
+profile
+DerivedData
+UserInterfaceState.xcuserstate
+docset-installed.txt
+
+!default.pbxuser
+!default.mode1v3
+!default.mode2v3
+!default.perspectivev3
+!default.xcworkspace
