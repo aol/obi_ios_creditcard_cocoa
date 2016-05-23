@@ -1,6 +1,0 @@
-framework module Pods_OBISubscriptions {
-  umbrella header "Pods-OBISubscriptions-umbrella.h"
-
-  export *
-  module * { export * }
-}

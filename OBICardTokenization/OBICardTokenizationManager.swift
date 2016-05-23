@@ -16,11 +16,14 @@
 
 import Foundation
 
-public let kOBISubscriptionsErrorDomain = "kOBISubscriptionsErrorDomain"
+//OBICardTokenization
+
+
+public let kOBICardTokenizationErrorDomain = "kOBICardTokenizationErrorDomain"
 
 private let unknownErrorDescription = "Unknown error"
 
-final public class OBISubscriptionsManager {
+final public class OBICardTokenizationManager {
     
     public class func tokenizePaymentMethod(cardIdNumber: String, cvv: String, requestToken: String, authToken: String, guid: String, completionBlock: (String?, NSError?) -> Void) {
         let key = requestToken.stringByReplacingOccurrencesOfString("-", withString: "")
@@ -42,10 +45,10 @@ final public class OBISubscriptionsManager {
     }
 }
  
-private extension OBISubscriptionsManager {
+private extension OBICardTokenizationManager {
     
     class func errorFromString(errorString: String?) -> NSError {
-        return NSError(domain: kOBISubscriptionsErrorDomain,
+        return NSError(domain: kOBICardTokenizationErrorDomain,
             code: 1,
             userInfo: [NSLocalizedDescriptionKey: errorString ?? unknownErrorDescription])
     }

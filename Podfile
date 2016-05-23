@@ -3,7 +3,7 @@ platform :ios, '8.0'
 # Uncomment this line if you're using Swift
 use_frameworks!
 
-target 'OBISubscriptions' do
+target 'OBICardTokenization' do
 
 pod 'AFNetworking', '~> 3.0.4'
 pod 'Mantle', '~> 2.0.6'

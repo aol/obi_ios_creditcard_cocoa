@@ -17,7 +17,6 @@
 		0E15F927D5D991F1A1ECCB84BA6AEAC3 /* NSError+MTLModelException.m in Sources */ = {isa = PBXBuildFile; fileRef = 7094D0613D801F7E01EC3213607CCDB6 /* NSError+MTLModelException.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		1480F4923DBBF217F60572EEECB4027C /* AFNetworkActivityIndicatorManager.h in Headers */ = {isa = PBXBuildFile; fileRef = D2AA6324D035940F40426F1F60136C43 /* AFNetworkActivityIndicatorManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		168387A67301B29037CC1779AAE81ADC /* NSDictionary+MTLMappingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 628ED53CF0A4A9DC03233918DC233399 /* NSDictionary+MTLMappingAdditions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		172DCFA282DBD3754D0AF612027DEA69 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80FF44178312A86C7B9C1F8431F75735 /* Foundation.framework */; };
 		174202BD6AE0E4A41F5CE66E975EAE52 /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 843AF1BD6680E43723ABAA2599D37202 /* UIRefreshControl+AFNetworking.m */; };
 		192AC43D2F848129D2CAC66DAAF6CA35 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EDC82E26C0F346EB4C7A4C4C5A0E864 /* Security.framework */; };
 		1DCC299F1DB74B1D602947C6E35EBED9 /* IntExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FFC6EB739BE06CCB6062E1C88DEA80 /* IntExtension.swift */; };
@@ -94,13 +93,13 @@
 		9BA2DFC3AC3787CC82662F2A216FC0CB /* EXTKeyPathCoding.h in Headers */ = {isa = PBXBuildFile; fileRef = BA30947420FCEC2BCD453D3B81A3811D /* EXTKeyPathCoding.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		9E1E90DED74B73ECE53C9AD76DE53E2D /* UIImage+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 6954EF0BAF26CB7B93B72276860F8D79 /* UIImage+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A132B0C3DD6EFB588393B2D4C49F7E74 /* CTR.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801B3406DA09829994BB149C5334342C /* CTR.swift */; };
+		A3BEA652981FBB18747AC05661799B88 /* Pods-OBICardTokenization-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B4FEF4E23BCCA6B54FED3C20FDFE1AE4 /* Pods-OBICardTokenization-dummy.m */; };
 		A462945883F7729B185B64B679A6BFBE /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 295FF40561A96FA729E56738D2153C7A /* UIWebView+AFNetworking.m */; };
 		A55F3F8533C7F4C4B8E755EB75747685 /* Mantle-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E27AA73D0CF62E4FFC6E8D7B580D363 /* Mantle-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A6C6019D45BE62C61210A9CC619368EF /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5166456C112097FA96327D2E1ADE1C51 /* AFNetworkActivityIndicatorManager.m */; };
 		A9F967B37C2391F35BF29EED871C3CFE /* NSDictionary+MTLJSONKeyPath.h in Headers */ = {isa = PBXBuildFile; fileRef = CB7F22B5939281A1C88A8860F3FA784A /* NSDictionary+MTLJSONKeyPath.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AB39AC9746E7575D7449700475E41B0B /* AFHTTPSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C2D4284A14B376741A19D6C61346427 /* AFHTTPSessionManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		ABDB1A6938F6EBAE33D6448C49033335 /* Generics.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE67973608D59D57534171F0ACC3BA16 /* Generics.swift */; };
-		ADEB84C5ADF27459D5E884FD5CD83658 /* Pods-OBISubscriptions-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 623EBF919E6538E06DC1C7C1104735E6 /* Pods-OBISubscriptions-dummy.m */; };
 		AE2A07407FB50BA249984DC0620E84C0 /* UIWebView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C359F7825E95C5EF16F2AA6F80E6CEF /* UIWebView+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AE9ABF1468EEF702F5109CB34FB68748 /* SHA2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85DD482E6A3EB9828D0E09F58C7204A6 /* SHA2.swift */; };
 		AF03C11A1FAC8132AD3749D8F541701A /* UIButton+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = F445F0F0D7691E75E803729257184486 /* UIButton+AFNetworking.m */; };
@@ -109,8 +108,8 @@
 		B65773B0448A713786714269C30BB67C /* String+FoundationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469CD7C8F1353BC2BB8898364A1B34B5 /* String+FoundationExtension.swift */; };
 		B99FAFBBC58F176BCBAA61124A21C14B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80FF44178312A86C7B9C1F8431F75735 /* Foundation.framework */; };
 		BAD96E2016E6A4B5E5ACAD386CDB65A3 /* EXTRuntimeExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 19EE4F09CA443A26FEF37C1CD2CB8D49 /* EXTRuntimeExtensions.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		BBCA8A8664C43DC75BE06E1F15AAEFE3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80FF44178312A86C7B9C1F8431F75735 /* Foundation.framework */; };
 		BC61C0266F58E2FF51DCDA369F89A7BB /* NSError+MTLModelException.h in Headers */ = {isa = PBXBuildFile; fileRef = C0EC0DF58EB5568D0F6CE0F5B83F0885 /* NSError+MTLModelException.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BD2154BABFAEFCDEB056F02E943A1A2D /* Pods-OBISubscriptions-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 49354B17BDA10F093E60DA97C1855AFE /* Pods-OBISubscriptions-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BE4D68C8C5B2736CAA7C58FEA6FF5BBE /* CFB.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA640068AEC0282D2BF436E13B30A39 /* CFB.swift */; };
 		BF05E420ABE5BC7CE455FEF0326FC17B /* Bit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741E58558536B15480C9CFD668AF5C74 /* Bit.swift */; };
 		C19FF51B6E11AA180486CEFB5F3FC219 /* MTLJSONAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = F29EF3BEC36E3F96691973823E18F8A8 /* MTLJSONAdapter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
@@ -139,6 +138,7 @@
 		E9618CAFEEBBEF383D4460D28F2FB4BB /* NSValueTransformer+MTLPredefinedTransformerAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 96F033F8F7C684D6141BABB681404150 /* NSValueTransformer+MTLPredefinedTransformerAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EAC4CC44502358A00DA0AC03959A487F /* UInt64Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D89CF3F049D7D2D16C82F73A8C8222 /* UInt64Extension.swift */; };
 		EC7CADE416A78A1CD6936018A6695126 /* AFNetworking-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 48BBA17137DC3A36012EBD12EAD5030D /* AFNetworking-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ED495935C29C02D50CF2DD19444F919B /* Pods-OBICardTokenization-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 67E3AE4599AE0C446BAEECB2001E71F1 /* Pods-OBICardTokenization-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EF677EC05C40B131998F119109EAFBF7 /* NSArray+MTLManipulationAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F17D315128B8A70D941E21D845B90D91 /* NSArray+MTLManipulationAdditions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		F170870FC2FFC89E84F296D8B784B851 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDCB84C338A53657986DA4208FF42A2 /* Utils.swift */; };
 		F9F2FD97B54CD1092D74CF9A63C7F611 /* AES+Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CCDC11F44307BCF0D34ABC97477C374 /* AES+Foundation.swift */; };
@@ -146,26 +146,26 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		0C4D59C29576F9A1C510860A0F7AD71B /* PBXContainerItemProxy */ = {
+		29D966F40E7D9B0F92641C1A843EE8A7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 34C073D448A23CA3A97EA55CC489BD6F;
-			remoteInfo = CryptoSwift;
+			remoteGlobalIDString = 1C3436CEA5C3D39764C5F54374794ECB;
+			remoteInfo = AFNetworking;
 		};
-		1DB1F6E80BC99AE8EDAD9FC249C29CA2 /* PBXContainerItemProxy */ = {
+		8B12D7F3A6725E50EFFD30C109874C28 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 814D7F0C846B4DCB10FE73B71013FF5D;
 			remoteInfo = Mantle;
 		};
-		E616DABC231C9CA6867319553D7C1117 /* PBXContainerItemProxy */ = {
+		A363FEF17FCA22B4C2E201C24663F003 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 1C3436CEA5C3D39764C5F54374794ECB;
-			remoteInfo = AFNetworking;
+			remoteGlobalIDString = 34C073D448A23CA3A97EA55CC489BD6F;
+			remoteInfo = CryptoSwift;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -175,21 +175,23 @@
 		016C02D6B166E236E32A21700CAA0EFB /* HashProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HashProtocol.swift; path = Sources/CryptoSwift/HashProtocol.swift; sourceTree = "<group>"; };
 		028D9B51E8D1493EAA53AD16D4126837 /* ECB.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ECB.swift; path = Sources/CryptoSwift/BlockMode/ECB.swift; sourceTree = "<group>"; };
 		029D0876ED2CA89B7B7F09798B4BB3E7 /* UIProgressView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIProgressView+AFNetworking.h"; path = "UIKit+AFNetworking/UIProgressView+AFNetworking.h"; sourceTree = "<group>"; };
-		02E43AEE54353E3F426A53D58A1FB1C3 /* Pods-OBISubscriptions.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OBISubscriptions.release.xcconfig"; sourceTree = "<group>"; };
 		0501F0FE22A354647302692CC5460A58 /* MTLModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MTLModel.h; path = Mantle/MTLModel.h; sourceTree = "<group>"; };
+		05805DF2B72795EC324FFCC0E5472A09 /* Pods-OBICardTokenization.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OBICardTokenization.debug.xcconfig"; sourceTree = "<group>"; };
+		07535548E0E2EC1D3BAA37887F3AF519 /* Pods-OBICardTokenization-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-OBICardTokenization-resources.sh"; sourceTree = "<group>"; };
 		07F079EF3600E7460C2B9D922D3B871E /* NSDictionary+MTLManipulationAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+MTLManipulationAdditions.m"; path = "Mantle/NSDictionary+MTLManipulationAdditions.m"; sourceTree = "<group>"; };
 		09BA11EEE97C53E055C0F365D1DDCFC1 /* NSValueTransformer+MTLInversionAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSValueTransformer+MTLInversionAdditions.h"; path = "Mantle/NSValueTransformer+MTLInversionAdditions.h"; sourceTree = "<group>"; };
+		0A301C9C6D2DEE3675F0C0BFD82FC7D1 /* Pods-OBICardTokenization.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-OBICardTokenization.modulemap"; sourceTree = "<group>"; };
 		0AD1A4D36E7B824961885789A16854DF /* Multiplatform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Multiplatform.swift; path = Sources/CryptoSwift/Multiplatform.swift; sourceTree = "<group>"; };
 		0C359F7825E95C5EF16F2AA6F80E6CEF /* UIWebView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIWebView+AFNetworking.h"; path = "UIKit+AFNetworking/UIWebView+AFNetworking.h"; sourceTree = "<group>"; };
 		0C56A43F9530A934B62DE838E68EAC16 /* BlockModeOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BlockModeOptions.swift; path = Sources/CryptoSwift/BlockMode/BlockModeOptions.swift; sourceTree = "<group>"; };
 		0C89680934CE1E1ED76B70CA8E50B62B /* HMAC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HMAC.swift; path = Sources/CryptoSwift/HMAC.swift; sourceTree = "<group>"; };
 		0F5811E9F5441D7F355788844F512099 /* MTLModel+NSCoding.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "MTLModel+NSCoding.m"; path = "Mantle/MTLModel+NSCoding.m"; sourceTree = "<group>"; };
-		12882810C14BE252C1E24E1D97F3E07F /* Pods-OBISubscriptions.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-OBISubscriptions.modulemap"; sourceTree = "<group>"; };
-		1739B6CC7338D27060CFCC44CBDADA64 /* Pods-OBISubscriptions.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OBISubscriptions.debug.xcconfig"; sourceTree = "<group>"; };
 		173C3ECDF83BB62D7FA9C03A94D46AB7 /* CryptoSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CryptoSwift-umbrella.h"; sourceTree = "<group>"; };
 		17D89CF3F049D7D2D16C82F73A8C8222 /* UInt64Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UInt64Extension.swift; path = Sources/CryptoSwift/UInt64Extension.swift; sourceTree = "<group>"; };
+		18F9FD5BFC656AE46DC6EE1A09496ADD /* Pods-OBICardTokenization-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-OBICardTokenization-acknowledgements.markdown"; sourceTree = "<group>"; };
 		19EE4F09CA443A26FEF37C1CD2CB8D49 /* EXTRuntimeExtensions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXTRuntimeExtensions.h; path = Mantle/extobjc/EXTRuntimeExtensions.h; sourceTree = "<group>"; };
 		1B0A15003DCEEBA4FDF7ABE901F172CE /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/MobileCoreServices.framework; sourceTree = DEVELOPER_DIR; };
+		1E966ED74921068A94D353BE042C4BDD /* Mantle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Mantle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EF77C48DD8315A8EA5DC90A92798A64 /* AFImageDownloader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFImageDownloader.h; path = "UIKit+AFNetworking/AFImageDownloader.h"; sourceTree = "<group>"; };
 		2171BC64646B0350B43DA1B52F477115 /* MTLValueTransformer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MTLValueTransformer.m; path = Mantle/MTLValueTransformer.m; sourceTree = "<group>"; };
 		22960B12AFBC46A95E9807FA432D3401 /* AFAutoPurgingImageCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFAutoPurgingImageCache.h; path = "UIKit+AFNetworking/AFAutoPurgingImageCache.h"; sourceTree = "<group>"; };
@@ -200,12 +202,11 @@
 		2C280AA30FFA00CE03B29668652DC3CC /* IntegerConvertible.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IntegerConvertible.swift; path = Sources/CryptoSwift/IntegerConvertible.swift; sourceTree = "<group>"; };
 		2EDC82E26C0F346EB4C7A4C4C5A0E864 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
 		31E5F7E7AC3067D3D7B888696F6E5AC7 /* String+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+Extension.swift"; path = "Sources/CryptoSwift/String+Extension.swift"; sourceTree = "<group>"; };
+		31F249B3C873B771565A6F9821D2535E /* AFNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AFNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		33B155CE1D3EFFC3C7AE9774C56E1D7D /* MTLModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MTLModel.m; path = Mantle/MTLModel.m; sourceTree = "<group>"; };
 		343DFBED3469B92704E04E700E1DFF67 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
-		37B9984EE001746FE3452AA45A6C6299 /* Pods_OBISubscriptions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OBISubscriptions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		37EA324101FE008752CF346BD8907BDA /* Mantle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Mantle.h; path = Mantle/Mantle.h; sourceTree = "<group>"; };
 		3C746F9DD8DA299D450FF233DF37396E /* AFURLSessionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLSessionManager.h; path = AFNetworking/AFURLSessionManager.h; sourceTree = "<group>"; };
-		3F0912359901B8431506AA8CEECED436 /* Pods-OBISubscriptions-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-OBISubscriptions-frameworks.sh"; sourceTree = "<group>"; };
 		3F657E84D4B9290E3F7476C203508747 /* MTLReflection.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MTLReflection.m; path = Mantle/MTLReflection.m; sourceTree = "<group>"; };
 		4132835BBFB0DD1FFA351EA6B6606A0C /* PKCS5.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PKCS5.swift; path = Sources/CryptoSwift/PKCS5/PKCS5.swift; sourceTree = "<group>"; };
 		41B8D94AAE18695A9706483A5B4BD1A9 /* CipherProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CipherProtocol.swift; path = Sources/CryptoSwift/CipherProtocol.swift; sourceTree = "<group>"; };
@@ -215,10 +216,8 @@
 		4783A59A3192C4BE28AF33378BFC6148 /* MTLTransformerErrorHandling.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MTLTransformerErrorHandling.h; path = Mantle/MTLTransformerErrorHandling.h; sourceTree = "<group>"; };
 		48BBA17137DC3A36012EBD12EAD5030D /* AFNetworking-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AFNetworking-umbrella.h"; sourceTree = "<group>"; };
 		48FEBED08E997B4155E6E0A405FFF7EC /* MTLTransformerErrorHandling.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MTLTransformerErrorHandling.m; path = Mantle/MTLTransformerErrorHandling.m; sourceTree = "<group>"; };
-		49354B17BDA10F093E60DA97C1855AFE /* Pods-OBISubscriptions-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-OBISubscriptions-umbrella.h"; sourceTree = "<group>"; };
 		4E27AA73D0CF62E4FFC6E8D7B580D363 /* Mantle-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Mantle-umbrella.h"; sourceTree = "<group>"; };
 		5166456C112097FA96327D2E1ADE1C51 /* AFNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFNetworkActivityIndicatorManager.m; path = "UIKit+AFNetworking/AFNetworkActivityIndicatorManager.m"; sourceTree = "<group>"; };
-		520984301373D3957C2926748FB4E472 /* Mantle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Mantle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		524F9EFE95E2BA368D94D654A2440C28 /* Padding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Padding.swift; path = Sources/CryptoSwift/Padding.swift; sourceTree = "<group>"; };
 		5440022454B47D0229C415BAD665C633 /* NSValueTransformer+MTLInversionAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSValueTransformer+MTLInversionAdditions.m"; path = "Mantle/NSValueTransformer+MTLInversionAdditions.m"; sourceTree = "<group>"; };
 		5669B2AD5277798F3C3E30842B3A67D4 /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImageView+AFNetworking.h"; path = "UIKit+AFNetworking/UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
@@ -229,12 +228,11 @@
 		6000395507E33E674679088A49476014 /* CSArrayType+Foundation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CSArrayType+Foundation.swift"; path = "Sources/CryptoSwift/Foundation/CSArrayType+Foundation.swift"; sourceTree = "<group>"; };
 		61301046B72747F5CCD3B24EFBE582D6 /* NSDictionary+MTLManipulationAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+MTLManipulationAdditions.h"; path = "Mantle/NSDictionary+MTLManipulationAdditions.h"; sourceTree = "<group>"; };
 		61E7E7FDCE7C8D8D5C060F754D911AEB /* SecureBytes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SecureBytes.swift; path = Sources/CryptoSwift/SecureBytes.swift; sourceTree = "<group>"; };
-		623EBF919E6538E06DC1C7C1104735E6 /* Pods-OBISubscriptions-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-OBISubscriptions-dummy.m"; sourceTree = "<group>"; };
 		628ED53CF0A4A9DC03233918DC233399 /* NSDictionary+MTLMappingAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+MTLMappingAdditions.m"; path = "Mantle/NSDictionary+MTLMappingAdditions.m"; sourceTree = "<group>"; };
 		643B935F7590B06462D3BE98360BF860 /* MD5.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MD5.swift; path = Sources/CryptoSwift/MD5.swift; sourceTree = "<group>"; };
-		65234687A1D5E6E088DDF72CC89E78BA /* CryptoSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CryptoSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6641EBD65598FBB651B96354B5B704C3 /* NSValueTransformer+MTLPredefinedTransformerAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSValueTransformer+MTLPredefinedTransformerAdditions.m"; path = "Mantle/NSValueTransformer+MTLPredefinedTransformerAdditions.m"; sourceTree = "<group>"; };
 		6792BB283365DD85D015C80F92E6CD6F /* AFImageDownloader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFImageDownloader.m; path = "UIKit+AFNetworking/AFImageDownloader.m"; sourceTree = "<group>"; };
+		67E3AE4599AE0C446BAEECB2001E71F1 /* Pods-OBICardTokenization-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-OBICardTokenization-umbrella.h"; sourceTree = "<group>"; };
 		6954EF0BAF26CB7B93B72276860F8D79 /* UIImage+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+AFNetworking.h"; path = "UIKit+AFNetworking/UIImage+AFNetworking.h"; sourceTree = "<group>"; };
 		6A2AC41EFB0F333CEC6F3F04C681D29F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7094D0613D801F7E01EC3213607CCDB6 /* NSError+MTLModelException.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSError+MTLModelException.m"; path = "Mantle/NSError+MTLModelException.m"; sourceTree = "<group>"; };
@@ -244,6 +242,7 @@
 		745603A8F26CCAA4BEBFB41310EA0F47 /* UIButton+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+AFNetworking.h"; path = "UIKit+AFNetworking/UIButton+AFNetworking.h"; sourceTree = "<group>"; };
 		74885B5A536CA10533E11964B53D31BB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		78503CE78B92DC6C96685EAF66C79247 /* BlockModeGenerator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BlockModeGenerator.swift; path = Sources/CryptoSwift/BlockMode/BlockModeGenerator.swift; sourceTree = "<group>"; };
+		78AA19A88CC90E1CD02F8D28B21868B6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7C2D4284A14B376741A19D6C61346427 /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFHTTPSessionManager.h; path = AFNetworking/AFHTTPSessionManager.h; sourceTree = "<group>"; };
 		7C76B3EFAB90A5333622F9FB939AF0CF /* ArrayUInt8+Foundation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ArrayUInt8+Foundation.swift"; path = "Sources/CryptoSwift/Foundation/ArrayUInt8+Foundation.swift"; sourceTree = "<group>"; };
 		7F32E109B5732157F803E001BE990E35 /* MTLReflection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MTLReflection.h; path = Mantle/MTLReflection.h; sourceTree = "<group>"; };
@@ -261,6 +260,7 @@
 		895BEE91E5113E216890F614E3576D97 /* Poly1305.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Poly1305.swift; path = Sources/CryptoSwift/Poly1305.swift; sourceTree = "<group>"; };
 		8B908934AFBB3E07F070839538211F06 /* CBC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CBC.swift; path = Sources/CryptoSwift/BlockMode/CBC.swift; sourceTree = "<group>"; };
 		8CCDC11F44307BCF0D34ABC97477C374 /* AES+Foundation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "AES+Foundation.swift"; path = "Sources/CryptoSwift/Foundation/AES+Foundation.swift"; sourceTree = "<group>"; };
+		8FF76281F5FDE96FC53E4DED40D62266 /* Pods_OBICardTokenization.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OBICardTokenization.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9473110CED13B5841AE1EBA512A678D5 /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLRequestSerialization.h; path = AFNetworking/AFURLRequestSerialization.h; sourceTree = "<group>"; };
 		94B267F022F0910D7D9D6EDF3F32CE12 /* AFSecurityPolicy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFSecurityPolicy.m; path = AFNetworking/AFSecurityPolicy.m; sourceTree = "<group>"; };
@@ -270,19 +270,22 @@
 		98D751F4CDD70C099643AA5E78AD9C3D /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLResponseSerialization.h; path = AFNetworking/AFURLResponseSerialization.h; sourceTree = "<group>"; };
 		995C1FCCD1C9336D607EFF8CEE757420 /* UIRefreshControl+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIRefreshControl+AFNetworking.h"; path = "UIKit+AFNetworking/UIRefreshControl+AFNetworking.h"; sourceTree = "<group>"; };
 		9996B3942864091865CB6BC2E4206213 /* ChaCha20+Foundation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ChaCha20+Foundation.swift"; path = "Sources/CryptoSwift/Foundation/ChaCha20+Foundation.swift"; sourceTree = "<group>"; };
+		99B171D10853E1E77DD1B6FC8CAC27BD /* CryptoSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CryptoSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E4C831D5B9D25ABE6BB6E17A2B006E1 /* Pods-OBICardTokenization.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OBICardTokenization.release.xcconfig"; sourceTree = "<group>"; };
 		A2B3B1090122A151C027EA667A7CA9AA /* UIProgressView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIProgressView+AFNetworking.m"; path = "UIKit+AFNetworking/UIProgressView+AFNetworking.m"; sourceTree = "<group>"; };
 		AAA640068AEC0282D2BF436E13B30A39 /* CFB.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CFB.swift; path = Sources/CryptoSwift/BlockMode/CFB.swift; sourceTree = "<group>"; };
 		ADEED7434F345071D147028F287A60E5 /* AFSecurityPolicy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFSecurityPolicy.h; path = AFNetworking/AFSecurityPolicy.h; sourceTree = "<group>"; };
+		B38281A3B18B182B3C3CA8F835D3160C /* Pods-OBICardTokenization-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-OBICardTokenization-acknowledgements.plist"; sourceTree = "<group>"; };
 		B4E0022BC4C1C7F1BCADC59E692DBDE5 /* Mantle-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Mantle-prefix.pch"; sourceTree = "<group>"; };
-		B77D45430F18CE44A032E25BD811460C /* Pods-OBISubscriptions-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-OBISubscriptions-acknowledgements.plist"; sourceTree = "<group>"; };
+		B4FEF4E23BCCA6B54FED3C20FDFE1AE4 /* Pods-OBICardTokenization-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-OBICardTokenization-dummy.m"; sourceTree = "<group>"; };
 		B82D05A7B6EA998699B35889F151A6DA /* PBKDF2.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PBKDF2.swift; path = Sources/CryptoSwift/PKCS5/PBKDF2.swift; sourceTree = "<group>"; };
+		B8E2E2447D8684298B735D880DAB63F8 /* Pods-OBICardTokenization-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-OBICardTokenization-frameworks.sh"; sourceTree = "<group>"; };
 		B8F7EB6F623322EEFCF79814C33944AF /* AFNetworking-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AFNetworking-prefix.pch"; sourceTree = "<group>"; };
 		B9554E4CDB9BEC9FA7C8B9F338436A2F /* Mantle.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Mantle.xcconfig; sourceTree = "<group>"; };
 		B9704D73FEE6EA1716CCA72649EC41C8 /* metamacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = metamacros.h; path = Mantle/extobjc/metamacros.h; sourceTree = "<group>"; };
 		BA30947420FCEC2BCD453D3B81A3811D /* EXTKeyPathCoding.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXTKeyPathCoding.h; path = Mantle/extobjc/EXTKeyPathCoding.h; sourceTree = "<group>"; };
 		BA8C6FC035ECC1BCAA4A64AD092E3BB0 /* MTLModel+NSCoding.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MTLModel+NSCoding.h"; path = "Mantle/MTLModel+NSCoding.h"; sourceTree = "<group>"; };
 		BAD5331DB4FD0401BFD0415FF1657BA2 /* AFAutoPurgingImageCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFAutoPurgingImageCache.m; path = "UIKit+AFNetworking/AFAutoPurgingImageCache.m"; sourceTree = "<group>"; };
-		BF0F92E79C5B545B20FD87164E04669E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BF5C9EDEEB6FA8A992C4CB5131FDF15A /* AFNetworking.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = AFNetworking.modulemap; sourceTree = "<group>"; };
 		C0EC0DF58EB5568D0F6CE0F5B83F0885 /* NSError+MTLModelException.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSError+MTLModelException.h"; path = "Mantle/NSError+MTLModelException.h"; sourceTree = "<group>"; };
 		C126AF039D0FD550B8CC6D67E019B182 /* UInt8Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UInt8Extension.swift; path = Sources/CryptoSwift/UInt8Extension.swift; sourceTree = "<group>"; };
@@ -295,7 +298,6 @@
 		D2AA6324D035940F40426F1F60136C43 /* AFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworkActivityIndicatorManager.h; path = "UIKit+AFNetworking/AFNetworkActivityIndicatorManager.h"; sourceTree = "<group>"; };
 		D6FC69114EE54C191EC33B0A14ABFCBA /* PCBC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PCBC.swift; path = Sources/CryptoSwift/BlockMode/PCBC.swift; sourceTree = "<group>"; };
 		D7CD0DEED3B712AB068312DEABFA1014 /* NSDictionary+MTLJSONKeyPath.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+MTLJSONKeyPath.m"; path = "Mantle/NSDictionary+MTLJSONKeyPath.m"; sourceTree = "<group>"; };
-		D883E6602996F2DEDB1099A055D64936 /* AFNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AFNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D915B4CF07420A56BB84A0CC3AB32D35 /* NSObject+MTLComparisonAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+MTLComparisonAdditions.m"; path = "Mantle/NSObject+MTLComparisonAdditions.m"; sourceTree = "<group>"; };
 		D985465A4AD5E584515F6BAEB693496C /* CryptoSwift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CryptoSwift.xcconfig; sourceTree = "<group>"; };
 		D9CE1ECDED201459643F41E57C82C519 /* CRC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CRC.swift; path = Sources/CryptoSwift/CRC.swift; sourceTree = "<group>"; };
@@ -306,7 +308,6 @@
 		DDB638F494363207A2D144A835AFC7B4 /* NSDictionary+MTLMappingAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+MTLMappingAdditions.h"; path = "Mantle/NSDictionary+MTLMappingAdditions.h"; sourceTree = "<group>"; };
 		DE67973608D59D57534171F0ACC3BA16 /* Generics.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Generics.swift; path = Sources/CryptoSwift/Generics.swift; sourceTree = "<group>"; };
 		DFDCB84C338A53657986DA4208FF42A2 /* Utils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Utils.swift; path = Sources/CryptoSwift/Utils.swift; sourceTree = "<group>"; };
-		E22C044CE1EB7445F3E6F49DCE3B5BEF /* Pods-OBISubscriptions-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-OBISubscriptions-acknowledgements.markdown"; sourceTree = "<group>"; };
 		E4B0A189D746C70977F82B81D64D48E1 /* UIActivityIndicatorView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIActivityIndicatorView+AFNetworking.h"; path = "UIKit+AFNetworking/UIActivityIndicatorView+AFNetworking.h"; sourceTree = "<group>"; };
 		E4F500974A25F52068AC09B27200D715 /* Rabbit+Foundation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Rabbit+Foundation.swift"; path = "Sources/CryptoSwift/Foundation/Rabbit+Foundation.swift"; sourceTree = "<group>"; };
 		E8178CE531C661D44EE9E9D937C486C4 /* BlockCipher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BlockCipher.swift; path = Sources/CryptoSwift/BlockCipher.swift; sourceTree = "<group>"; };
@@ -325,7 +326,6 @@
 		F8DDE41549F89C89B530EC458D0F2700 /* CipherBlockMode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CipherBlockMode.swift; path = Sources/CryptoSwift/BlockMode/CipherBlockMode.swift; sourceTree = "<group>"; };
 		F8E3C903C93BF855F33C57757DF2DBDF /* EXTRuntimeExtensions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EXTRuntimeExtensions.m; path = Mantle/extobjc/EXTRuntimeExtensions.m; sourceTree = "<group>"; };
 		FB5BAD92283262823F989FE44B2AC564 /* CSArrayType+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CSArrayType+Extensions.swift"; path = "Sources/CryptoSwift/CSArrayType+Extensions.swift"; sourceTree = "<group>"; };
-		FB8923DD061D33D3073A5378CAD6C4FA /* Pods-OBISubscriptions-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-OBISubscriptions-resources.sh"; sourceTree = "<group>"; };
 		FCC864FDF8AB007D56FC14BF54D82E8C /* Mantle-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Mantle-dummy.m"; sourceTree = "<group>"; };
 		FCDBB9521F0383F4557CB34B09C09E71 /* Mantle.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Mantle.modulemap; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -347,11 +347,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		88999A0E038418E0A0CE3D911C87F243 /* Frameworks */ = {
+		AD6964B793CAB4B7CD525996FEE3B8D9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				172DCFA282DBD3754D0AF612027DEA69 /* Foundation.framework in Frameworks */,
+				BBCA8A8664C43DC75BE06E1F15AAEFE3 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -401,6 +401,17 @@
 				C761E5FA1F44D3ED6FE01BEB570F8488 /* AFURLResponseSerialization.m */,
 			);
 			name = Serialization;
+			sourceTree = "<group>";
+		};
+		2BD858429D002764CCA335E8A9D3EF62 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				31F249B3C873B771565A6F9821D2535E /* AFNetworking.framework */,
+				99B171D10853E1E77DD1B6FC8CAC27BD /* CryptoSwift.framework */,
+				1E966ED74921068A94D353BE042C4BDD /* Mantle.framework */,
+				8FF76281F5FDE96FC53E4DED40D62266 /* Pods_OBICardTokenization.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		2C66BFBFED74CA34903E96E2800D5AB6 /* Mantle */ = {
@@ -564,8 +575,8 @@
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				20B56609144CE204DFA8221F742B2D76 /* Frameworks */,
 				977499F2CD2BD46AA365A62EE9C40727 /* Pods */,
-				C5C85FA207ABD5F65A71AC93D2141231 /* Products */,
-				D61470E993B4D5C927934B3E5B38B073 /* Targets Support Files */,
+				2BD858429D002764CCA335E8A9D3EF62 /* Products */,
+				B63190566F7BACFFB809236D5BE01D9F /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
@@ -577,6 +588,14 @@
 				2C66BFBFED74CA34903E96E2800D5AB6 /* Mantle */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		B63190566F7BACFFB809236D5BE01D9F /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				BAA8E7148C0849871D799EA053E30E6A /* Pods-OBICardTokenization */,
+			);
+			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
 		B6988BF0AB5F8C5E930CB17B63C8A9A2 /* Support Files */ = {
@@ -593,33 +612,22 @@
 			path = "../Target Support Files/CryptoSwift";
 			sourceTree = "<group>";
 		};
-		B9528921D1E34CCFEA2B899EEBA20A89 /* Pods-OBISubscriptions */ = {
+		BAA8E7148C0849871D799EA053E30E6A /* Pods-OBICardTokenization */ = {
 			isa = PBXGroup;
 			children = (
-				BF0F92E79C5B545B20FD87164E04669E /* Info.plist */,
-				12882810C14BE252C1E24E1D97F3E07F /* Pods-OBISubscriptions.modulemap */,
-				E22C044CE1EB7445F3E6F49DCE3B5BEF /* Pods-OBISubscriptions-acknowledgements.markdown */,
-				B77D45430F18CE44A032E25BD811460C /* Pods-OBISubscriptions-acknowledgements.plist */,
-				623EBF919E6538E06DC1C7C1104735E6 /* Pods-OBISubscriptions-dummy.m */,
-				3F0912359901B8431506AA8CEECED436 /* Pods-OBISubscriptions-frameworks.sh */,
-				FB8923DD061D33D3073A5378CAD6C4FA /* Pods-OBISubscriptions-resources.sh */,
-				49354B17BDA10F093E60DA97C1855AFE /* Pods-OBISubscriptions-umbrella.h */,
-				1739B6CC7338D27060CFCC44CBDADA64 /* Pods-OBISubscriptions.debug.xcconfig */,
-				02E43AEE54353E3F426A53D58A1FB1C3 /* Pods-OBISubscriptions.release.xcconfig */,
+				78AA19A88CC90E1CD02F8D28B21868B6 /* Info.plist */,
+				0A301C9C6D2DEE3675F0C0BFD82FC7D1 /* Pods-OBICardTokenization.modulemap */,
+				18F9FD5BFC656AE46DC6EE1A09496ADD /* Pods-OBICardTokenization-acknowledgements.markdown */,
+				B38281A3B18B182B3C3CA8F835D3160C /* Pods-OBICardTokenization-acknowledgements.plist */,
+				B4FEF4E23BCCA6B54FED3C20FDFE1AE4 /* Pods-OBICardTokenization-dummy.m */,
+				B8E2E2447D8684298B735D880DAB63F8 /* Pods-OBICardTokenization-frameworks.sh */,
+				07535548E0E2EC1D3BAA37887F3AF519 /* Pods-OBICardTokenization-resources.sh */,
+				67E3AE4599AE0C446BAEECB2001E71F1 /* Pods-OBICardTokenization-umbrella.h */,
+				05805DF2B72795EC324FFCC0E5472A09 /* Pods-OBICardTokenization.debug.xcconfig */,
+				9E4C831D5B9D25ABE6BB6E17A2B006E1 /* Pods-OBICardTokenization.release.xcconfig */,
 			);
-			name = "Pods-OBISubscriptions";
-			path = "Target Support Files/Pods-OBISubscriptions";
-			sourceTree = "<group>";
-		};
-		C5C85FA207ABD5F65A71AC93D2141231 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				D883E6602996F2DEDB1099A055D64936 /* AFNetworking.framework */,
-				65234687A1D5E6E088DDF72CC89E78BA /* CryptoSwift.framework */,
-				520984301373D3957C2926748FB4E472 /* Mantle.framework */,
-				37B9984EE001746FE3452AA45A6C6299 /* Pods_OBISubscriptions.framework */,
-			);
-			name = Products;
+			name = "Pods-OBICardTokenization";
+			path = "Target Support Files/Pods-OBICardTokenization";
 			sourceTree = "<group>";
 		};
 		CBC87048A8EC76FF690E2AB8A7979FC5 /* NSURLSession */ = {
@@ -645,14 +653,6 @@
 			);
 			name = "Support Files";
 			path = "../Target Support Files/Mantle";
-			sourceTree = "<group>";
-		};
-		D61470E993B4D5C927934B3E5B38B073 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				B9528921D1E34CCFEA2B899EEBA20A89 /* Pods-OBISubscriptions */,
-			);
-			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
 		D966E174216D2ECF1757B1F7469853CE /* extobjc */ = {
@@ -685,14 +685,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		43B7763B9C4BDF1F4C281131D8F63E0B /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				BD2154BABFAEFCDEB056F02E943A1A2D /* Pods-OBISubscriptions-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		7C6A0D99A9CC32A19A92A62F8A941139 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -754,6 +746,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D35D4CF8AF8AFCDBBEABE67E32CD2E21 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED495935C29C02D50CF2DD19444F919B /* Pods-OBICardTokenization-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
@@ -771,7 +771,7 @@
 			);
 			name = AFNetworking;
 			productName = AFNetworking;
-			productReference = D883E6602996F2DEDB1099A055D64936 /* AFNetworking.framework */;
+			productReference = 31F249B3C873B771565A6F9821D2535E /* AFNetworking.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		34C073D448A23CA3A97EA55CC489BD6F /* CryptoSwift */ = {
@@ -788,27 +788,7 @@
 			);
 			name = CryptoSwift;
 			productName = CryptoSwift;
-			productReference = 65234687A1D5E6E088DDF72CC89E78BA /* CryptoSwift.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		673F5B691A86907D934C102DDC4215B0 /* Pods-OBISubscriptions */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = AD1B1C6258BEEB4CEC384EDD769EB686 /* Build configuration list for PBXNativeTarget "Pods-OBISubscriptions" */;
-			buildPhases = (
-				836FDEAA9674586DD5C224302A33FAE8 /* Sources */,
-				88999A0E038418E0A0CE3D911C87F243 /* Frameworks */,
-				43B7763B9C4BDF1F4C281131D8F63E0B /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				00E6C1976B0390CFBDB7C9DFB4FB81D3 /* PBXTargetDependency */,
-				3B79FFE600FE3907DEBE1CF7E6666436 /* PBXTargetDependency */,
-				42063BFC6E820B07917BBC5D17C75533 /* PBXTargetDependency */,
-			);
-			name = "Pods-OBISubscriptions";
-			productName = "Pods-OBISubscriptions";
-			productReference = 37B9984EE001746FE3452AA45A6C6299 /* Pods_OBISubscriptions.framework */;
+			productReference = 99B171D10853E1E77DD1B6FC8CAC27BD /* CryptoSwift.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		814D7F0C846B4DCB10FE73B71013FF5D /* Mantle */ = {
@@ -825,7 +805,27 @@
 			);
 			name = Mantle;
 			productName = Mantle;
-			productReference = 520984301373D3957C2926748FB4E472 /* Mantle.framework */;
+			productReference = 1E966ED74921068A94D353BE042C4BDD /* Mantle.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8A3D683FD8175747629B5274F4BF1C32 /* Pods-OBICardTokenization */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E15EA970CC791711BB7D1F420BE2F986 /* Build configuration list for PBXNativeTarget "Pods-OBICardTokenization" */;
+			buildPhases = (
+				CCBA531B7E71AE7B9CBAD9F52F895FB7 /* Sources */,
+				AD6964B793CAB4B7CD525996FEE3B8D9 /* Frameworks */,
+				D35D4CF8AF8AFCDBBEABE67E32CD2E21 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A30613285A1DD8AA21A1D760E5F04B1C /* PBXTargetDependency */,
+				04638D03F1C9AF72BED949CEE05BF2DB /* PBXTargetDependency */,
+				D00D2D1F5BE872CDA0FC22FEE3EF1EEC /* PBXTargetDependency */,
+			);
+			name = "Pods-OBICardTokenization";
+			productName = "Pods-OBICardTokenization";
+			productReference = 8FF76281F5FDE96FC53E4DED40D62266 /* Pods_OBICardTokenization.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -845,14 +845,14 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = C5C85FA207ABD5F65A71AC93D2141231 /* Products */;
+			productRefGroup = 2BD858429D002764CCA335E8A9D3EF62 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				1C3436CEA5C3D39764C5F54374794ECB /* AFNetworking */,
 				34C073D448A23CA3A97EA55CC489BD6F /* CryptoSwift */,
 				814D7F0C846B4DCB10FE73B71013FF5D /* Mantle */,
-				673F5B691A86907D934C102DDC4215B0 /* Pods-OBISubscriptions */,
+				8A3D683FD8175747629B5274F4BF1C32 /* Pods-OBICardTokenization */,
 			);
 		};
 /* End PBXProject section */
@@ -965,38 +965,71 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		836FDEAA9674586DD5C224302A33FAE8 /* Sources */ = {
+		CCBA531B7E71AE7B9CBAD9F52F895FB7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ADEB84C5ADF27459D5E884FD5CD83658 /* Pods-OBISubscriptions-dummy.m in Sources */,
+				A3BEA652981FBB18747AC05661799B88 /* Pods-OBICardTokenization-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		00E6C1976B0390CFBDB7C9DFB4FB81D3 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = AFNetworking;
-			target = 1C3436CEA5C3D39764C5F54374794ECB /* AFNetworking */;
-			targetProxy = E616DABC231C9CA6867319553D7C1117 /* PBXContainerItemProxy */;
-		};
-		3B79FFE600FE3907DEBE1CF7E6666436 /* PBXTargetDependency */ = {
+		04638D03F1C9AF72BED949CEE05BF2DB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = CryptoSwift;
 			target = 34C073D448A23CA3A97EA55CC489BD6F /* CryptoSwift */;
-			targetProxy = 0C4D59C29576F9A1C510860A0F7AD71B /* PBXContainerItemProxy */;
+			targetProxy = A363FEF17FCA22B4C2E201C24663F003 /* PBXContainerItemProxy */;
 		};
-		42063BFC6E820B07917BBC5D17C75533 /* PBXTargetDependency */ = {
+		A30613285A1DD8AA21A1D760E5F04B1C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AFNetworking;
+			target = 1C3436CEA5C3D39764C5F54374794ECB /* AFNetworking */;
+			targetProxy = 29D966F40E7D9B0F92641C1A843EE8A7 /* PBXContainerItemProxy */;
+		};
+		D00D2D1F5BE872CDA0FC22FEE3EF1EEC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Mantle;
 			target = 814D7F0C846B4DCB10FE73B71013FF5D /* Mantle */;
-			targetProxy = 1DB1F6E80BC99AE8EDAD9FC249C29CA2 /* PBXContainerItemProxy */;
+			targetProxy = 8B12D7F3A6725E50EFFD30C109874C28 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		06081DDD2E4B06265C06A7D77CB36927 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E4C831D5B9D25ABE6BB6E17A2B006E1 /* Pods-OBICardTokenization.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-OBICardTokenization/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-OBICardTokenization/Pods-OBICardTokenization.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_OBICardTokenization;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		2619EB2E2DEAA440E3C914DC3631B128 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B9554E4CDB9BEC9FA7C8B9F338436A2F /* Mantle.xcconfig */;
@@ -1096,39 +1129,6 @@
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
-		};
-		5D02221D38747841C06647F0F41B0C5F /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 02E43AEE54353E3F426A53D58A1FB1C3 /* Pods-OBISubscriptions.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-OBISubscriptions/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-OBISubscriptions/Pods-OBISubscriptions.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_OBISubscriptions;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
 		};
 		6DBC9DEE986B8DAFE7B8FDC0944803A3 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -1285,9 +1285,9 @@
 			};
 			name = Debug;
 		};
-		C38C26DD2CDC16591F40013936BB04D9 /* Debug */ = {
+		BA150D21FE5720C0FED8F8283949BC46 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1739B6CC7338D27060CFCC44CBDADA64 /* Pods-OBISubscriptions.debug.xcconfig */;
+			baseConfigurationReference = 05805DF2B72795EC324FFCC0E5472A09 /* Pods-OBICardTokenization.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -1298,18 +1298,18 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-OBISubscriptions/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-OBICardTokenization/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-OBISubscriptions/Pods-OBISubscriptions.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-OBICardTokenization/Pods-OBICardTokenization.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_OBISubscriptions;
+				PRODUCT_NAME = Pods_OBICardTokenization;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -1358,11 +1358,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AD1B1C6258BEEB4CEC384EDD769EB686 /* Build configuration list for PBXNativeTarget "Pods-OBISubscriptions" */ = {
+		E15EA970CC791711BB7D1F420BE2F986 /* Build configuration list for PBXNativeTarget "Pods-OBICardTokenization" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C38C26DD2CDC16591F40013936BB04D9 /* Debug */,
-				5D02221D38747841C06647F0F41B0C5F /* Release */,
+				BA150D21FE5720C0FED8F8283949BC46 /* Debug */,
+				06081DDD2E4B06265C06A7D77CB36927 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

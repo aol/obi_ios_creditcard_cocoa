@@ -19,7 +19,7 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-OBISubscriptions.xcscheme</key>
+		<key>Pods-OBICardTokenization.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -37,12 +37,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>673F5B691A86907D934C102DDC4215B0</key>
+		<key>814D7F0C846B4DCB10FE73B71013FF5D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>814D7F0C846B4DCB10FE73B71013FF5D</key>
+		<key>8A3D683FD8175747629B5274F4BF1C32</key>
 		<dict>
 			<key>primary</key>
 			<true/>
