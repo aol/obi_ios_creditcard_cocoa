@@ -61,7 +61,7 @@
 		7C12CDC11CECA6F2001918C1 = {
 			isa = PBXGroup;
 			children = (
-				7C12CDCD1CECA6F3001918C1 /* OBICardTokenization */,
+				7C12CDCD1CECA6F3001918C1 /* Source */,
 				7C12CDCC1CECA6F2001918C1 /* Products */,
 				586821493DC89E912AD279D2 /* Frameworks */,
 				D96B18D63C087F1AD15EFDCD /* Pods */,
@@ -76,14 +76,14 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		7C12CDCD1CECA6F3001918C1 /* OBICardTokenization */ = {
+		7C12CDCD1CECA6F3001918C1 /* Source */ = {
 			isa = PBXGroup;
 			children = (
 				7C9907051CEDBB800091C8B1 /* OBICardTokenization.h */,
 				7C12CDD71CECAB3F001918C1 /* Classes */,
 				7C12CDD61CECAB33001918C1 /* Resources */,
 			);
-			path = OBICardTokenization;
+			path = Source;
 			sourceTree = "<group>";
 		};
 		7C12CDD61CECAB33001918C1 /* Resources */ = {
@@ -374,7 +374,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = OBICardTokenization/Info.plist;
+				INFOPLIST_FILE = Source/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -396,7 +396,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = OBICardTokenization/Info.plist;
+				INFOPLIST_FILE = Source/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
