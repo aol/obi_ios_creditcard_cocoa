@@ -17,7 +17,6 @@
 import Foundation
 import CryptoSwift
 
-
 final class EncryptionManager {
     
     //MARK: Internal properties

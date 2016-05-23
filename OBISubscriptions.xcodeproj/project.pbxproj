@@ -8,40 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		2B4AB656B75C6925BDDC3B3C /* Pods_OBISubscriptions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4AF8A53AEBC870CFB55C55B /* Pods_OBISubscriptions.framework */; };
-		7C12CDD91CECAD60001918C1 /* OrderUUIDGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C12CDD81CECAD60001918C1 /* OrderUUIDGenerator.swift */; };
-		7C12CDDD1CECADA2001918C1 /* CardSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C12CDDC1CECADA2001918C1 /* CardSystem.swift */; };
 		7C12CDE01CECADB8001918C1 /* EncryptionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C12CDDF1CECADB8001918C1 /* EncryptionManager.swift */; };
 		7C12CDE51CECADDF001918C1 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C12CDE31CECADDF001918C1 /* NetworkManager.swift */; };
-		7C12CDE61CECADDF001918C1 /* NetworkConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C12CDE41CECADDF001918C1 /* NetworkConfig.swift */; };
-		7C12CDEC1CECADE9001918C1 /* CardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C12CDE71CECADE9001918C1 /* CardModel.swift */; };
-		7C12CDED1CECADE9001918C1 /* SubscriptionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C12CDE81CECADE9001918C1 /* SubscriptionModel.swift */; };
-		7C12CDEE1CECADE9001918C1 /* RequestTokenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C12CDE91CECADE9001918C1 /* RequestTokenModel.swift */; };
 		7C12CDEF1CECADE9001918C1 /* CardTokenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C12CDEA1CECADE9001918C1 /* CardTokenModel.swift */; };
-		7C12CDF01CECADE9001918C1 /* PaymentMethodModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C12CDEB1CECADE9001918C1 /* PaymentMethodModel.swift */; };
 		7C9907061CEDBB800091C8B1 /* OBISubscriptions.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C9907051CEDBB800091C8B1 /* OBISubscriptions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7CFC83011CEDFE20009EA67E /* OBISubscriptionsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CFC83001CEDFE20009EA67E /* OBISubscriptionsManager.swift */; };
-		7CFF47B91CEF4C48003F6C90 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CFF47B81CEF4C48003F6C90 /* UserData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		11C03D1EB3A869022529A3F2 /* Pods-OBISubscriptions.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OBISubscriptions.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OBISubscriptions/Pods-OBISubscriptions.debug.xcconfig"; sourceTree = "<group>"; };
 		7C12CDCB1CECA6F2001918C1 /* OBISubscriptions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OBISubscriptions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C12CDD01CECA6F3001918C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7C12CDD81CECAD60001918C1 /* OrderUUIDGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderUUIDGenerator.swift; sourceTree = "<group>"; };
-		7C12CDDC1CECADA2001918C1 /* CardSystem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardSystem.swift; sourceTree = "<group>"; };
 		7C12CDDF1CECADB8001918C1 /* EncryptionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EncryptionManager.swift; sourceTree = "<group>"; };
 		7C12CDE31CECADDF001918C1 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
-		7C12CDE41CECADDF001918C1 /* NetworkConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkConfig.swift; sourceTree = "<group>"; };
-		7C12CDE71CECADE9001918C1 /* CardModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardModel.swift; sourceTree = "<group>"; };
-		7C12CDE81CECADE9001918C1 /* SubscriptionModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubscriptionModel.swift; sourceTree = "<group>"; };
-		7C12CDE91CECADE9001918C1 /* RequestTokenModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestTokenModel.swift; sourceTree = "<group>"; };
 		7C12CDEA1CECADE9001918C1 /* CardTokenModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardTokenModel.swift; sourceTree = "<group>"; };
-		7C12CDEB1CECADE9001918C1 /* PaymentMethodModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentMethodModel.swift; sourceTree = "<group>"; };
 		7C9907011CEDBB3D0091C8B1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		7C9907031CEDBB480091C8B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		7C9907051CEDBB800091C8B1 /* OBISubscriptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBISubscriptions.h; sourceTree = "<group>"; };
 		7CFC83001CEDFE20009EA67E /* OBISubscriptionsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OBISubscriptionsManager.swift; sourceTree = "<group>"; };
-		7CFF47B81CEF4C48003F6C90 /* UserData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
 		A690E8D00A1A194A996837DE /* Pods-OBISubscriptions.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OBISubscriptions.release.xcconfig"; path = "Pods/Target Support Files/Pods-OBISubscriptions/Pods-OBISubscriptions.release.xcconfig"; sourceTree = "<group>"; };
 		E4AF8A53AEBC870CFB55C55B /* Pods_OBISubscriptions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OBISubscriptions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -107,30 +91,11 @@
 		7C12CDD71CECAB3F001918C1 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				7CFF47B71CEF4C35003F6C90 /* UserData */,
 				7CFC82FF1CEDFE0C009EA67E /* OBISubscriptionsManager */,
 				7C12CDDE1CECADAF001918C1 /* EncryptionManager */,
-				7C12CDDB1CECAD99001918C1 /* CardSystem */,
-				7C12CDDA1CECAD73001918C1 /* OrderUUIDGenerator */,
 				7C12CDE11CECADC9001918C1 /* NetworkManager */,
 			);
 			name = Classes;
-			sourceTree = "<group>";
-		};
-		7C12CDDA1CECAD73001918C1 /* OrderUUIDGenerator */ = {
-			isa = PBXGroup;
-			children = (
-				7C12CDD81CECAD60001918C1 /* OrderUUIDGenerator.swift */,
-			);
-			name = OrderUUIDGenerator;
-			sourceTree = "<group>";
-		};
-		7C12CDDB1CECAD99001918C1 /* CardSystem */ = {
-			isa = PBXGroup;
-			children = (
-				7C12CDDC1CECADA2001918C1 /* CardSystem.swift */,
-			);
-			name = CardSystem;
 			sourceTree = "<group>";
 		};
 		7C12CDDE1CECADAF001918C1 /* EncryptionManager */ = {
@@ -146,7 +111,6 @@
 			children = (
 				7C12CDE21CECADD3001918C1 /* Models */,
 				7C12CDE31CECADDF001918C1 /* NetworkManager.swift */,
-				7C12CDE41CECADDF001918C1 /* NetworkConfig.swift */,
 			);
 			name = NetworkManager;
 			sourceTree = "<group>";
@@ -154,11 +118,7 @@
 		7C12CDE21CECADD3001918C1 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				7C12CDE71CECADE9001918C1 /* CardModel.swift */,
-				7C12CDE81CECADE9001918C1 /* SubscriptionModel.swift */,
-				7C12CDE91CECADE9001918C1 /* RequestTokenModel.swift */,
 				7C12CDEA1CECADE9001918C1 /* CardTokenModel.swift */,
-				7C12CDEB1CECADE9001918C1 /* PaymentMethodModel.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -169,14 +129,6 @@
 				7CFC83001CEDFE20009EA67E /* OBISubscriptionsManager.swift */,
 			);
 			name = OBISubscriptionsManager;
-			sourceTree = "<group>";
-		};
-		7CFF47B71CEF4C35003F6C90 /* UserData */ = {
-			isa = PBXGroup;
-			children = (
-				7CFF47B81CEF4C48003F6C90 /* UserData.swift */,
-			);
-			name = UserData;
 			sourceTree = "<group>";
 		};
 		D96B18D63C087F1AD15EFDCD /* Pods */ = {
@@ -302,17 +254,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				7CFC83011CEDFE20009EA67E /* OBISubscriptionsManager.swift in Sources */,
-				7C12CDED1CECADE9001918C1 /* SubscriptionModel.swift in Sources */,
 				7C12CDE51CECADDF001918C1 /* NetworkManager.swift in Sources */,
 				7C12CDEF1CECADE9001918C1 /* CardTokenModel.swift in Sources */,
-				7C12CDE61CECADDF001918C1 /* NetworkConfig.swift in Sources */,
-				7C12CDDD1CECADA2001918C1 /* CardSystem.swift in Sources */,
-				7CFF47B91CEF4C48003F6C90 /* UserData.swift in Sources */,
-				7C12CDD91CECAD60001918C1 /* OrderUUIDGenerator.swift in Sources */,
-				7C12CDEE1CECADE9001918C1 /* RequestTokenModel.swift in Sources */,
-				7C12CDF01CECADE9001918C1 /* PaymentMethodModel.swift in Sources */,
 				7C12CDE01CECADB8001918C1 /* EncryptionManager.swift in Sources */,
-				7C12CDEC1CECADE9001918C1 /* CardModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
