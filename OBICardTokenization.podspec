@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
 
   s.homepage     = "https://github.com/aol"
 
-  s.license      = "Private"
+  s.license     = "MIT"
 
   s.author    = "AOL"
 
