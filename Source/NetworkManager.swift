@@ -35,7 +35,7 @@ final class NetworkManager {
             "tokenizePaymentMethod": requestData,
         ]
         
-        let sessionManager = AFHTTPSessionManager(baseURL: NSURL(string: tokenizePaymentMethodURLString)!)
+        let sessionManager = AFHTTPSessionManager()
         sessionManager.requestSerializer = AFJSONRequestSerializer()
         sessionManager.responseSerializer = AFHTTPResponseSerializer()
         sessionManager.POST(urlString, parameters: jsonDict, progress: nil, success: { (session, responseObject) in
