@@ -29,27 +29,29 @@ final class NetworkManager {
     func tokenizePaymentMethod(authToken: String, guid: String, encryptedString: String, completionBlock: (CardTokenModel?, NSError?) -> Void) {
         let urlString = tokenizePaymentMethodURLString + "?" +
             "apiName=tokenizePaymentMethod&sg=testobi&t=\(authToken)&tg=\(guid)&country=US&lang=en"
-        let url = NSURL(string: urlString)
-        let request = NSMutableURLRequest(URL: url!)
-        request.HTTPMethod = "POST"
         
         let requestData = ["requestData": encryptedString]
-        let jsonDict = ["tokenizePaymentMethod": requestData]
-        let bodyData = try? NSJSONSerialization.dataWithJSONObject(jsonDict, options: [])
-        request.HTTPBody = bodyData
+        let jsonDict = [
+            "tokenizePaymentMethod": requestData,
+        ]
         
-        let sessionManager = AFHTTPSessionManager()
+        let sessionManager = AFHTTPSessionManager(baseURL: NSURL(string: tokenizePaymentMethodURLString)!)
+        sessionManager.requestSerializer = AFJSONRequestSerializer()
         sessionManager.responseSerializer = AFHTTPResponseSerializer()
-        let task = sessionManager.dataTaskWithRequest(request) { (response, responseObject, error) in
-            let data = responseObject as! NSData
-            let json = try? NSJSONSerialization.JSONObjectWithData(data, options: [])
-            let dict = json as? [NSObject: AnyObject]
-            if let result = try? MTLJSONAdapter.modelOfClass(CardTokenModel.self, fromJSONDictionary: dict) {
-                completionBlock(result as? CardTokenModel, nil)
-                return
+        sessionManager.POST(urlString, parameters: jsonDict, progress: nil, success: { (session, responseObject) in
+            if let data = responseObject as? NSData {
+                if let json = try? NSJSONSerialization.JSONObjectWithData(data, options: []) {
+                    if let dict = json as? [NSObject: AnyObject] {
+                        if let result = try? MTLJSONAdapter.modelOfClass(CardTokenModel.self, fromJSONDictionary: dict) {
+                            completionBlock(result as? CardTokenModel, nil)
+                            return
+                        }
+                    }
+                }
             }
+            completionBlock(nil, nil)
+        }) { (session, error) in
             completionBlock(nil, error)
         }
-        task.resume()        
     }
 }
