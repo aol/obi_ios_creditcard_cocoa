@@ -25,12 +25,19 @@ private let unknownErrorDescription = "Unknown error"
 
 final public class OBICardTokenizationManager {
     
-    public class func tokenizePaymentMethod(cardIdNumber: String, cvv: String, requestToken: String, authToken: String, guid: String, completionBlock: (String?, NSError?) -> Void) {
+    public class func tokenizePaymentMethod(cardIdNumber: String,
+                                            cvv: String,
+                                            requestToken: String,
+                                            authToken: String,
+                                            guid: String,
+                                            sg: String,
+                                            completionBlock: (String?, NSError?) -> Void) {
         let key = requestToken.stringByReplacingOccurrencesOfString("-", withString: "")
         let encryptedString = EncryptionManager.sharedManager.encryptCard(cardIdNumber, cvv: cvv, usingKey: key)
         NetworkManager.sharedManager.tokenizePaymentMethod(authToken,
                                                            guid: guid,
-                                                           encryptedString: encryptedString)
+                                                           encryptedString: encryptedString,
+                                                           sg: sg)
         { (cardToken, error) in
             if let token = cardToken {
                 if !token.token.isEmpty {

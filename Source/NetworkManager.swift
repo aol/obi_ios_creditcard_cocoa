@@ -26,9 +26,9 @@ final class NetworkManager {
     static let sharedManager = NetworkManager()
     
     //MARK: Internal Methods
-    func tokenizePaymentMethod(authToken: String, guid: String, encryptedString: String, completionBlock: (CardTokenModel?, NSError?) -> Void) {
+    func tokenizePaymentMethod(authToken: String, guid: String, encryptedString: String, sg: String, completionBlock: (CardTokenModel?, NSError?) -> Void) {
         let urlString = tokenizePaymentMethodURLString + "?" +
-            "apiName=tokenizePaymentMethod&sg=testobi&t=\(authToken)&tg=\(guid)&country=US&lang=en"
+            "apiName=tokenizePaymentMethod&sg=\(sg)&t=\(authToken)&tg=\(guid)&country=US&lang=en"
         
         let requestData = ["requestData": encryptedString]
         let jsonDict = [
