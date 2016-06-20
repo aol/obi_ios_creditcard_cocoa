@@ -25,6 +25,17 @@ private let unknownErrorDescription = "Unknown error"
 
 final public class OBICardTokenizationManager {
     
+    /**
+     Tokenize credit/debit card data with results of "getRequestToken" action
+     
+     - parameter cardIdNumber: card's id number
+     - parameter cvv: card's cvv code
+     - parameter requestToken: request token - result of "getRequestToken" action
+     - parameter authToken: authorization token - result of "getRequestToken" action
+     - parameter guid: user id
+     - parameter sg: client id
+     - parameter completionBlock: result block. This block provide result of tokenizatoin or error
+     */
     public class func tokenizePaymentMethod(cardIdNumber: String,
                                             cvv: String,
                                             requestToken: String,
