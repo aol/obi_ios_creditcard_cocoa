@@ -50,12 +50,13 @@ final public class OBICardTokenizationManager {
                                                            encryptedString: encryptedString,
                                                            sg: sg)
         { (cardToken, error) in
-            if let token = cardToken {
-                if !token.token.isEmpty {
-                    completionBlock(token.token, nil)
-                } else {
-                    completionBlock(nil, errorFromString(token.error))
-                }
+            if let token = cardToken where !token.isEmpty {
+                completionBlock(token, nil)
+//                if !token.token.isEmpty {
+//                    completionBlock(token.token, nil)
+//                } else {
+//                    completionBlock(nil, errorFromString(token.error))
+//                }
             } else {
                 completionBlock(nil, error ?? errorFromString(nil))
             }

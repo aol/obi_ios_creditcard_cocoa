@@ -5,8 +5,6 @@ use_frameworks!
 
 target 'OBICardTokenization' do
 
-pod 'AFNetworking', '~> 3.0.4'
-pod 'Mantle', '~> 2.0.6'
 pod 'CryptoSwift', '~> 0.4.1'
 
 end

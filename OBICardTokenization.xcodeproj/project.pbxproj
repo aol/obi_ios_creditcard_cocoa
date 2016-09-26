@@ -11,7 +11,6 @@
 		430CD4E484FA71B41E11501C /* Pods_OBICardTokenization.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3A09BD0583327039FA8146B /* Pods_OBICardTokenization.framework */; };
 		7C12CDE01CECADB8001918C1 /* EncryptionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C12CDDF1CECADB8001918C1 /* EncryptionManager.swift */; };
 		7C12CDE51CECADDF001918C1 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C12CDE31CECADDF001918C1 /* NetworkManager.swift */; };
-		7C12CDEF1CECADE9001918C1 /* CardTokenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C12CDEA1CECADE9001918C1 /* CardTokenModel.swift */; };
 		7C9907061CEDBB800091C8B1 /* OBICardTokenization.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C9907051CEDBB800091C8B1 /* OBICardTokenization.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7CFC83011CEDFE20009EA67E /* OBICardTokenizationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CFC83001CEDFE20009EA67E /* OBICardTokenizationManager.swift */; };
 /* End PBXBuildFile section */
@@ -23,7 +22,6 @@
 		7C12CDD01CECA6F3001918C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7C12CDDF1CECADB8001918C1 /* EncryptionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EncryptionManager.swift; sourceTree = "<group>"; };
 		7C12CDE31CECADDF001918C1 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
-		7C12CDEA1CECADE9001918C1 /* CardTokenModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardTokenModel.swift; sourceTree = "<group>"; };
 		7C9907011CEDBB3D0091C8B1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		7C9907031CEDBB480091C8B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		7C9907051CEDBB800091C8B1 /* OBICardTokenization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBICardTokenization.h; sourceTree = "<group>"; };
@@ -115,18 +113,9 @@
 		7C12CDE11CECADC9001918C1 /* NetworkManager */ = {
 			isa = PBXGroup;
 			children = (
-				7C12CDE21CECADD3001918C1 /* Models */,
 				7C12CDE31CECADDF001918C1 /* NetworkManager.swift */,
 			);
 			name = NetworkManager;
-			sourceTree = "<group>";
-		};
-		7C12CDE21CECADD3001918C1 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				7C12CDEA1CECADE9001918C1 /* CardTokenModel.swift */,
-			);
-			name = Models;
 			sourceTree = "<group>";
 		};
 		7CFC82FF1CEDFE0C009EA67E /* OBICardTokenizationManager */ = {
@@ -166,12 +155,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7C12CDD31CECA6F3001918C1 /* Build configuration list for PBXNativeTarget "OBICardTokenization" */;
 			buildPhases = (
-				8DC03FCF46AD9FC3F1290FAB /* 📦 Check Pods Manifest.lock */,
+				8DC03FCF46AD9FC3F1290FAB /* [CP] Check Pods Manifest.lock */,
 				7C12CDC61CECA6F2001918C1 /* Sources */,
 				7C12CDC71CECA6F2001918C1 /* Frameworks */,
 				7C12CDC81CECA6F2001918C1 /* Headers */,
 				7C12CDC91CECA6F2001918C1 /* Resources */,
-				958FD242CFE114DA85F40B37 /* 📦 Copy Pods Resources */,
+				958FD242CFE114DA85F40B37 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -225,14 +214,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		8DC03FCF46AD9FC3F1290FAB /* 📦 Check Pods Manifest.lock */ = {
+		8DC03FCF46AD9FC3F1290FAB /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -240,14 +229,14 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		958FD242CFE114DA85F40B37 /* 📦 Copy Pods Resources */ = {
+		958FD242CFE114DA85F40B37 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -264,7 +253,6 @@
 			files = (
 				7CFC83011CEDFE20009EA67E /* OBICardTokenizationManager.swift in Sources */,
 				7C12CDE51CECADDF001918C1 /* NetworkManager.swift in Sources */,
-				7C12CDEF1CECADE9001918C1 /* CardTokenModel.swift in Sources */,
 				7C12CDE01CECADB8001918C1 /* EncryptionManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

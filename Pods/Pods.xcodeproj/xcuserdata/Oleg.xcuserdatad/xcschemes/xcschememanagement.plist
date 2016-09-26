@@ -4,17 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>AFNetworking.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>CryptoSwift.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Mantle.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -27,22 +17,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>1C3436CEA5C3D39764C5F54374794ECB</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>34C073D448A23CA3A97EA55CC489BD6F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>814D7F0C846B4DCB10FE73B71013FF5D</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>8A3D683FD8175747629B5274F4BF1C32</key>
+		<key>AFA8A87C6F7838EBA1A6FE806717A4E3</key>
 		<dict>
 			<key>primary</key>
 			<true/>

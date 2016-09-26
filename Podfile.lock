@@ -1,34 +1,12 @@
 PODS:
-  - AFNetworking (3.0.4):
-    - AFNetworking/NSURLSession (= 3.0.4)
-    - AFNetworking/Reachability (= 3.0.4)
-    - AFNetworking/Security (= 3.0.4)
-    - AFNetworking/Serialization (= 3.0.4)
-    - AFNetworking/UIKit (= 3.0.4)
-  - AFNetworking/NSURLSession (3.0.4):
-    - AFNetworking/Reachability
-    - AFNetworking/Security
-    - AFNetworking/Serialization
-  - AFNetworking/Reachability (3.0.4)
-  - AFNetworking/Security (3.0.4)
-  - AFNetworking/Serialization (3.0.4)
-  - AFNetworking/UIKit (3.0.4):
-    - AFNetworking/NSURLSession
   - CryptoSwift (0.4.1)
-  - Mantle (2.0.7):
-    - Mantle/extobjc (= 2.0.7)
-  - Mantle/extobjc (2.0.7)
 
 DEPENDENCIES:
-  - AFNetworking (~> 3.0.4)
   - CryptoSwift (~> 0.4.1)
-  - Mantle (~> 2.0.6)
 
 SPEC CHECKSUMS:
-  AFNetworking: a0075feb321559dc78d9d85b55d11caa19eabb93
   CryptoSwift: 25b5aff3f260967391f8fff2e9abe4254d2c6fd5
-  Mantle: bc40bb061d8c2c6fb48d5083e04d928c3b7f73d9
 
-PODFILE CHECKSUM: 952e36194f4f14c01d9f8f239e62763294819551
+PODFILE CHECKSUM: 28783d6d3c81592ce23f6f9dfe012bb11feef82c
 
-COCOAPODS: 1.0.0
+COCOAPODS: 1.0.1
