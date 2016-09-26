@@ -3,7 +3,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "OBICardTokenization"
-  s.version      = "0.0.3"
+  s.version      = "0.0.4"
   s.summary      = "Card tokenization framework"
 
   s.homepage     = "https://github.com/aol"
@@ -18,8 +18,6 @@ Pod::Spec.new do |s|
   s.source_files  = "Source/*.{swift}"
   s.requires_arc = true
 
-  s.dependency 'AFNetworking'
-  s.dependency 'Mantle'
   s.dependency 'CryptoSwift', '~> 0.4.1'
 
 end
