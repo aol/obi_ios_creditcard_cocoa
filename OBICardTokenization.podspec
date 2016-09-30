@@ -20,6 +20,6 @@ Pod::Spec.new do |s|
 
   s.dependency 'AFNetworking'
   s.dependency 'Mantle'
-  s.dependency 'CryptoSwift', '~> 0.4.1'
+  s.dependency 'CryptoSwift', '~> 0.5'
 
 end

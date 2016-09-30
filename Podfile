@@ -5,6 +5,6 @@ use_frameworks!
 
 target 'OBICardTokenization' do
 
-pod 'CryptoSwift', '~> 0.4.1'
+pod 'CryptoSwift', '~> 0.5'
 
 end

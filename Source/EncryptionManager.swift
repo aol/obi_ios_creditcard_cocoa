@@ -33,7 +33,7 @@ final class EncryptionManager {
         
         let bytes = Array(UnsafeBufferPointer(start: UnsafePointer<UInt8>(data.bytes), count: data.length))
         
-        if let encrypted = try? AES(key: usingKey, iv: "", blockMode: .ECB, padding: NoPadding()).cipherEncrypt(bytes) {
+        if let encrypted = try? AES(key: usingKey, iv: "", blockMode: .ECB, padding: NoPadding()).encrypt(bytes) {
             return encrypted.toBase64() ?? ""
         }
         
