@@ -3,7 +3,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "OBICardTokenization"
-  s.version      = "0.0.3"
+  s.version      = "0.0.4"
   s.summary      = "Card tokenization framework"
 
   s.homepage     = "https://github.com/aol"
