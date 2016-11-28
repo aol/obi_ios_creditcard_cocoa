@@ -7,29 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2B4AB656B75C6925BDDC3B3C /* Pods_OBICardTokenization.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4AF8A53AEBC870CFB55C55B /* Pods_OBICardTokenization.framework */; };
-		430CD4E484FA71B41E11501C /* Pods_OBICardTokenization.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3A09BD0583327039FA8146B /* Pods_OBICardTokenization.framework */; };
 		7C12CDE01CECADB8001918C1 /* EncryptionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C12CDDF1CECADB8001918C1 /* EncryptionManager.swift */; };
 		7C12CDE51CECADDF001918C1 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C12CDE31CECADDF001918C1 /* NetworkManager.swift */; };
+		7C4528601DEC7549009F9444 /* NSData+AESCrypt.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C45285E1DEC7549009F9444 /* NSData+AESCrypt.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7C4528611DEC7549009F9444 /* NSData+AESCrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C45285F1DEC7549009F9444 /* NSData+AESCrypt.m */; };
 		7C9907061CEDBB800091C8B1 /* OBICardTokenization.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C9907051CEDBB800091C8B1 /* OBICardTokenization.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7CFC83011CEDFE20009EA67E /* OBICardTokenizationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CFC83001CEDFE20009EA67E /* OBICardTokenizationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		11C03D1EB3A869022529A3F2 /* Pods-OBICardTokenization.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OBICardTokenization.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OBICardTokenization/Pods-OBICardTokenization.debug.xcconfig"; sourceTree = "<group>"; };
-		1AB2E9954BFC0FF0E3D8CFD7 /* Pods-OBICardTokenization.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OBICardTokenization.release.xcconfig"; path = "Pods/Target Support Files/Pods-OBICardTokenization/Pods-OBICardTokenization.release.xcconfig"; sourceTree = "<group>"; };
 		7C12CDCB1CECA6F2001918C1 /* OBICardTokenization.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OBICardTokenization.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C12CDD01CECA6F3001918C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7C12CDDF1CECADB8001918C1 /* EncryptionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EncryptionManager.swift; sourceTree = "<group>"; };
 		7C12CDE31CECADDF001918C1 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		7C45285E1DEC7549009F9444 /* NSData+AESCrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+AESCrypt.h"; sourceTree = "<group>"; };
+		7C45285F1DEC7549009F9444 /* NSData+AESCrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+AESCrypt.m"; sourceTree = "<group>"; };
 		7C9907011CEDBB3D0091C8B1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		7C9907031CEDBB480091C8B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		7C9907051CEDBB800091C8B1 /* OBICardTokenization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBICardTokenization.h; sourceTree = "<group>"; };
 		7CFC83001CEDFE20009EA67E /* OBICardTokenizationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OBICardTokenizationManager.swift; sourceTree = "<group>"; };
-		A690E8D00A1A194A996837DE /* Pods-OBICardTokenization.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OBICardTokenization.release.xcconfig"; path = "Pods/Target Support Files/Pods-OBICardTokenization/Pods-OBICardTokenization.release.xcconfig"; sourceTree = "<group>"; };
-		BFD7A985E26BFBC428BFEE58 /* Pods-OBICardTokenization.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OBICardTokenization.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OBICardTokenization/Pods-OBICardTokenization.debug.xcconfig"; sourceTree = "<group>"; };
-		E4AF8A53AEBC870CFB55C55B /* Pods_OBICardTokenization.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OBICardTokenization.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F3A09BD0583327039FA8146B /* Pods_OBICardTokenization.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OBICardTokenization.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,8 +33,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B4AB656B75C6925BDDC3B3C /* Pods_OBICardTokenization.framework in Frameworks */,
-				430CD4E484FA71B41E11501C /* Pods_OBICardTokenization.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,8 +44,6 @@
 			children = (
 				7C9907031CEDBB480091C8B1 /* Foundation.framework */,
 				7C9907011CEDBB3D0091C8B1 /* UIKit.framework */,
-				E4AF8A53AEBC870CFB55C55B /* Pods_OBICardTokenization.framework */,
-				F3A09BD0583327039FA8146B /* Pods_OBICardTokenization.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -62,7 +54,6 @@
 				7C12CDCD1CECA6F3001918C1 /* Source */,
 				7C12CDCC1CECA6F2001918C1 /* Products */,
 				586821493DC89E912AD279D2 /* Frameworks */,
-				D96B18D63C087F1AD15EFDCD /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,6 +68,7 @@
 		7C12CDCD1CECA6F3001918C1 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				7C4528551DEC2AE6009F9444 /* ObjC */,
 				7C9907051CEDBB800091C8B1 /* OBICardTokenization.h */,
 				7C12CDD71CECAB3F001918C1 /* Classes */,
 				7C12CDD61CECAB33001918C1 /* Resources */,
@@ -118,23 +110,21 @@
 			name = NetworkManager;
 			sourceTree = "<group>";
 		};
+		7C4528551DEC2AE6009F9444 /* ObjC */ = {
+			isa = PBXGroup;
+			children = (
+				7C45285E1DEC7549009F9444 /* NSData+AESCrypt.h */,
+				7C45285F1DEC7549009F9444 /* NSData+AESCrypt.m */,
+			);
+			name = ObjC;
+			sourceTree = "<group>";
+		};
 		7CFC82FF1CEDFE0C009EA67E /* OBICardTokenizationManager */ = {
 			isa = PBXGroup;
 			children = (
 				7CFC83001CEDFE20009EA67E /* OBICardTokenizationManager.swift */,
 			);
 			name = OBICardTokenizationManager;
-			sourceTree = "<group>";
-		};
-		D96B18D63C087F1AD15EFDCD /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				11C03D1EB3A869022529A3F2 /* Pods-OBICardTokenization.debug.xcconfig */,
-				A690E8D00A1A194A996837DE /* Pods-OBICardTokenization.release.xcconfig */,
-				BFD7A985E26BFBC428BFEE58 /* Pods-OBICardTokenization.debug.xcconfig */,
-				1AB2E9954BFC0FF0E3D8CFD7 /* Pods-OBICardTokenization.release.xcconfig */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,6 +134,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C4528601DEC7549009F9444 /* NSData+AESCrypt.h in Headers */,
 				7C9907061CEDBB800091C8B1 /* OBICardTokenization.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -155,12 +146,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7C12CDD31CECA6F3001918C1 /* Build configuration list for PBXNativeTarget "OBICardTokenization" */;
 			buildPhases = (
-				8DC03FCF46AD9FC3F1290FAB /* [CP] Check Pods Manifest.lock */,
 				7C12CDC61CECA6F2001918C1 /* Sources */,
 				7C12CDC71CECA6F2001918C1 /* Frameworks */,
 				7C12CDC81CECA6F2001918C1 /* Headers */,
 				7C12CDC91CECA6F2001918C1 /* Resources */,
-				958FD242CFE114DA85F40B37 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -213,45 +202,13 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		8DC03FCF46AD9FC3F1290FAB /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		958FD242CFE114DA85F40B37 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OBICardTokenization/Pods-OBICardTokenization-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		7C12CDC61CECA6F2001918C1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				7CFC83011CEDFE20009EA67E /* OBICardTokenizationManager.swift in Sources */,
+				7C4528611DEC7549009F9444 /* NSData+AESCrypt.m in Sources */,
 				7C12CDE51CECADDF001918C1 /* NetworkManager.swift in Sources */,
 				7C12CDE01CECADB8001918C1 /* EncryptionManager.swift in Sources */,
 			);
@@ -355,7 +312,6 @@
 		};
 		7C12CDD41CECA6F3001918C1 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BFD7A985E26BFBC428BFEE58 /* Pods-OBICardTokenization.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
 				CLANG_ENABLE_MODULES = YES;
@@ -378,7 +334,6 @@
 		};
 		7C12CDD51CECA6F3001918C1 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1AB2E9954BFC0FF0E3D8CFD7 /* Pods-OBICardTokenization.release.xcconfig */;
 			buildSettings = {
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
 				CLANG_ENABLE_MODULES = YES;

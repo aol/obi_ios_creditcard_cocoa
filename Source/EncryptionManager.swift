@@ -15,7 +15,6 @@
  */
 
 import Foundation
-import CryptoSwift
 
 final class EncryptionManager {
     
@@ -31,12 +30,10 @@ final class EncryptionManager {
         let emptyBytes: [UInt8] = Array(count: count, repeatedValue: 0)
         data.appendBytes(emptyBytes, length: count)
         
-        let bytes = Array(UnsafeBufferPointer(start: UnsafePointer<UInt8>(data.bytes), count: data.length))
-        
-        if let encrypted = try? AES(key: usingKey, iv: "", blockMode: .ECB, padding: NoPadding()).cipherEncrypt(bytes) {
-            return encrypted.toBase64() ?? ""
+        if let encryptedData = data.AES128EncryptWithKey(usingKey) {
+            return encryptedData.base64EncodedStringWithOptions([])
+        } else {
+            return ""
         }
-        
-        return ""
     }
 }

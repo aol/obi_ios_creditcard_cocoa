@@ -15,6 +15,7 @@
  */
 
 #import <UIKit/UIKit.h>
+#import "NSData+AESCrypt.h"
 
 //! Project version number for OBICardTokenization.
 FOUNDATION_EXPORT double OBICardTokenizationVersionNumber;
