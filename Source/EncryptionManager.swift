@@ -30,7 +30,7 @@ final class EncryptionManager {
         let emptyBytes: [UInt8] = Array(count: count, repeatedValue: 0)
         data.appendBytes(emptyBytes, length: count)
         
-        if let encryptedData = data.AES128EncryptWithKey(usingKey) {
+        if let encryptedData = data.AES128EncryptWithKey32(usingKey) {
             return encryptedData.base64EncodedStringWithOptions([])
         } else {
             return ""

@@ -17,13 +17,13 @@
 #import "NSData+AESCrypt.h"
 #import <CommonCrypto/CommonCryptor.h>
 
-const int kKeySize = 32;
+const int kKey32Size = 32;
 
 @implementation NSData (AESCrypt)
 
-- (NSData *)AES128EncryptWithKey:(NSString *)key {
-    char keyPtr[kKeySize + 1]; // room for terminator (unused)
-    [key getCString:keyPtr maxLength:sizeof( keyPtr ) encoding:NSUTF8StringEncoding];
+- (NSData *)AES128EncryptWithKey32:(NSString *)key {
+    char keyPtr[kKey32Size + 1]; // room for terminator (unused)
+    [key getCString:keyPtr maxLength:sizeof(keyPtr) encoding:NSUTF8StringEncoding];
     
     NSUInteger dataLength = [self length];
     size_t bufferSize = dataLength + kCCBlockSizeAES128;
@@ -34,7 +34,7 @@ const int kKeySize = 32;
                                           kCCAlgorithmAES128,
                                           kCCOptionECBMode,
                                           keyPtr,
-                                          kKeySize,
+                                          kKey32Size,
                                           NULL /* initialization vector (optional) */,
                                           [self bytes],
                                           dataLength, /* input */
