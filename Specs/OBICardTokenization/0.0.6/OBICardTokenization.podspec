@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
   s.ios.deployment_target  = '8.0'
 
   s.name         = "OBICardTokenization"
-  s.version      = "0.0.5"
+  s.version      = "0.0.6"
   s.summary      = "Card tokenization framework"
 
   s.homepage     = "https://github.com/aol"
