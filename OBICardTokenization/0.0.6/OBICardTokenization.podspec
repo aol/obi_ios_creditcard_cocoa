@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
   s.author    = "AOL"
 
   s.platform     = :ios, "8.0"
-  s.source       = { :git => "https://github.com/aol/obi_ios_creditcard_cocoa.git", :branch => "master", :tag => s.version }
+  s.source       = { :git => "https://github.com/aol/obi_ios_creditcard_cocoa.git", :tag => s.version }
 
   s.source_files  = "Source/*.*"
   s.requires_arc = true
