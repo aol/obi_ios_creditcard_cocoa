@@ -22,7 +22,7 @@ final class EncryptionManager {
     static let sharedManager = EncryptionManager()
     
     //MARK: Internal Methods
-    func encryptCard(_ cardNumber: String, cvv: String, usingKey: String) -> String {
+    func encryptCard(cardNumber: String, cvv: String, usingKey: String) -> String {
         let stringToEnctypt = cardNumber + ";" + cvv
         
         var data = stringToEnctypt.data(using: String.Encoding.utf8)!

@@ -44,7 +44,7 @@ final public class OBICardTokenizationManager {
                                             sg: String,
                                             completionBlock: @escaping (String?, NSError?) -> Void) {
         let key = requestToken.replacingOccurrences(of: "-", with: "")
-        let encrypted = EncryptionManager.sharedManager.encryptCard(cardNumber, cvv: cvv, usingKey: key)
+        let encrypted = EncryptionManager.sharedManager.encryptCard(cardNumber: cardNumber, cvv: cvv, usingKey: key)
         NetworkManager.shared.tokenize(authToken:authToken, guid: guid, encrypted: encrypted, sg: sg) { (cardToken, error) in
             if let token = cardToken, !token.isEmpty {
                 completionBlock(token, nil)
