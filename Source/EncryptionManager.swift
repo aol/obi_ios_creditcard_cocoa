@@ -22,16 +22,16 @@ final class EncryptionManager {
     static let sharedManager = EncryptionManager()
     
     //MARK: Internal Methods
-    func encryptCard(cardNumber: String, cvv: String, usingKey: String) -> String {
+    func encryptCard(_ cardNumber: String, cvv: String, usingKey: String) -> String {
         let stringToEnctypt = cardNumber + ";" + cvv
         
-        let data = stringToEnctypt.dataUsingEncoding(NSUTF8StringEncoding)?.mutableCopy() as! NSMutableData
-        let count = 16 - data.length % 16
-        let emptyBytes: [UInt8] = Array(count: count, repeatedValue: 0)
-        data.appendBytes(emptyBytes, length: count)
+        var data = stringToEnctypt.data(using: String.Encoding.utf8)!
+        let count = 16 - data.count % 16
+        let emptyBytes: [UInt8] = Array(repeating: 0, count: count)
+        data.append(emptyBytes, count: count)
         
-        if let encryptedData = data.AES128EncryptWithKey32(usingKey) {
-            return encryptedData.base64EncodedStringWithOptions([])
+        if let encryptedData = (data as NSData).aes128Encrypt(withKey32: usingKey) {
+            return encryptedData.base64EncodedString(options: [])
         } else {
             return ""
         }

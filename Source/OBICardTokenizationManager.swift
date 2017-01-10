@@ -28,7 +28,7 @@ final public class OBICardTokenizationManager {
     /**
      Tokenize credit/debit card data with results of "getRequestToken" action
      
-     - parameter cardIdNumber: card's id number
+     - parameter cardNumber: card's id number
      - parameter cvv: card's cvv code
      - parameter requestToken: request token - result of "getRequestToken" action
      - parameter authToken: authorization token - result of "getRequestToken" action
@@ -36,21 +36,17 @@ final public class OBICardTokenizationManager {
      - parameter sg: client id
      - parameter completionBlock: result block. This block provide result of tokenizatoin or error
      */
-    public class func tokenizePaymentMethod(cardIdNumber: String,
+    public class func tokenizePaymentMethod(cardNumber: String,
                                             cvv: String,
                                             requestToken: String,
                                             authToken: String,
                                             guid: String,
                                             sg: String,
-                                            completionBlock: (String?, NSError?) -> Void) {
-        let key = requestToken.stringByReplacingOccurrencesOfString("-", withString: "")
-        let encryptedString = EncryptionManager.sharedManager.encryptCard(cardIdNumber, cvv: cvv, usingKey: key)
-        NetworkManager.sharedManager.tokenizePaymentMethod(authToken,
-                                                           guid: guid,
-                                                           encryptedString: encryptedString,
-                                                           sg: sg)
-        { (cardToken, error) in
-            if let token = cardToken where !token.isEmpty {
+                                            completionBlock: @escaping (String?, NSError?) -> Void) {
+        let key = requestToken.replacingOccurrences(of: "-", with: "")
+        let encrypted = EncryptionManager.sharedManager.encryptCard(cardNumber, cvv: cvv, usingKey: key)
+        NetworkManager.shared.tokenize(authToken:authToken, guid: guid, encrypted: encrypted, sg: sg) { (cardToken, error) in
+            if let token = cardToken, !token.isEmpty {
                 completionBlock(token, nil)
             } else {
                 completionBlock(nil, error ?? errorFromString(nil))
@@ -61,7 +57,7 @@ final public class OBICardTokenizationManager {
  
 private extension OBICardTokenizationManager {
     
-    class func errorFromString(errorString: String?) -> NSError {
+    class func errorFromString(_ errorString: String?) -> NSError {
         return NSError(domain: kOBICardTokenizationErrorDomain,
             code: 1,
             userInfo: [NSLocalizedDescriptionKey: errorString ?? unknownErrorDescription])

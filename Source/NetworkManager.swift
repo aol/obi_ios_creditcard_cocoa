@@ -22,34 +22,36 @@ private let tokenKeyPath = "data.m:tokenizePaymentMethodResponse.m:result"
 final class NetworkManager {
     
     //MARK: Internal Properties
-    static let sharedManager = NetworkManager()
+    static let shared = NetworkManager()
     
     //MARK: Internal Methods
-    func tokenizePaymentMethod(authToken: String, guid: String, encryptedString: String, sg: String, completionBlock: (String?, NSError?) -> Void) {
-        let urlString = tokenizePaymentMethodURLString + "?" +
-            "apiName=tokenizePaymentMethod&sg=\(sg)&t=\(authToken)&tg=\(guid)&country=US&lang=en"
-        let url = NSURL(string: urlString)
-        let request = NSMutableURLRequest(URL: url!)
-        request.HTTPMethod = "POST"
+    func tokenize(authToken: String, guid: String, encrypted: String, sg: String, completionBlock: @escaping (String?, NSError?) -> Void) {
+        let urlString =
+            tokenizePaymentMethodURLString + "?" + "apiName=tokenizePaymentMethod&sg=\(sg)&t=\(authToken)&tg=\(guid)&country=US&lang=en"
+        let url = URL(string: urlString)!
+        let request = NSMutableURLRequest(url: url)
+        request.httpMethod = "POST"
         
-        let requestData = ["requestData": encryptedString]
+        let requestData = ["requestData": encrypted]
         let jsonDict = ["tokenizePaymentMethod": requestData]
-        let bodyData = try? NSJSONSerialization.dataWithJSONObject(jsonDict, options: [])
-        request.HTTPBody = bodyData
+        let bodyData = try? JSONSerialization.data(withJSONObject: jsonDict, options: [])
+        request.httpBody = bodyData
         
-        let task = NSURLSession.sharedSession().dataTaskWithRequest(request) { (responseObject, response, error) in
-            if let data = responseObject {
-                if let json = try? NSJSONSerialization.JSONObjectWithData(data, options: []) {
-                    if let dict = json as? [NSObject: AnyObject] {
-                        if let token = (dict as NSDictionary).valueForKeyPath(tokenKeyPath) as? String {
-                            completionBlock(token, nil)
-                            return
+        let task = URLSession.shared.dataTask(with: request as URLRequest) { (responseObject, response, error) in
+            DispatchQueue.main.async {
+                if let data = responseObject {
+                    if let json = try? JSONSerialization.jsonObject(with: data, options: []) {
+                        if let dict = json as? [AnyHashable: Any] {
+                            if let token = (dict as NSDictionary).value(forKeyPath: tokenKeyPath) as? String {
+                                completionBlock(token, nil)
+                                return
+                            }
                         }
                     }
+                    completionBlock(nil, nil)
+                } else if let e = error {
+                    completionBlock(nil, e as NSError)
                 }
-                completionBlock(nil, nil)
-            } else if let e = error {
-                completionBlock(nil, e)
             }
         }
         task.resume()
