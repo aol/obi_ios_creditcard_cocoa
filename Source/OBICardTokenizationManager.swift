@@ -25,6 +25,8 @@ private let unknownErrorDescription = "Unknown error"
 
 final public class OBICardTokenizationManager {
     
+    public static var urlString = ""
+    
     /**
      Tokenize credit/debit card data with results of "getRequestToken" action
      
