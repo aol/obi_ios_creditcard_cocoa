@@ -40,7 +40,7 @@ final public class OBICardTokenizationManager {
         let encrypted = EncryptionManager.sharedManager.encryptCard(cardNumber: cardNumber, cvv: cvv, usingKey: key)
         NetworkManager.shared.tokenize(encrypted: encrypted, domain: domain.rawValue) { (cardToken, error) in
             if let token = cardToken, !token.isEmpty {
-                completionBlock(token, nil)
+                completionBlock(token + ";" + key, nil)
             } else {
                 completionBlock(nil, error ?? errorFromString(nil))
             }
