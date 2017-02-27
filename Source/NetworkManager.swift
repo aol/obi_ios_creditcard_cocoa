@@ -30,7 +30,7 @@ final class NetworkManager {
 //            completionBlock(nil, NSError(domain: kOBICardTokenizationErrorDomain, code: 2, userInfo: [NSLocalizedDescriptionKey: emptyUrlErrorDescription]))
 //        }
         
-        let urlString = domain + "?" + "apiName=tokenizePaymentMethod&&country=US&lang=en"
+        let urlString = domain + "?" + "apiName=tokenizePaymentMethod&country=US&lang=en"
         let url = URL(string: urlString)!
         let request = NSMutableURLRequest(url: url)
         request.httpMethod = "POST"
