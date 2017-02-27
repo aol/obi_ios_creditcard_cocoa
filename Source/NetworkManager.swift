@@ -25,13 +25,12 @@ final class NetworkManager {
     static let shared = NetworkManager()
     
     //MARK: Internal Methods
-    func tokenize(authToken: String, guid: String, encrypted: String, sg: String, completionBlock: @escaping (String?, NSError?) -> Void) {
+    func tokenize(encrypted: String, domain: String, completionBlock: @escaping (String?, NSError?) -> Void) {
         if OBICardTokenizationManager.urlString.isEmpty {
             completionBlock(nil, NSError(domain: kOBICardTokenizationErrorDomain, code: 2, userInfo: [NSLocalizedDescriptionKey: emptyUrlErrorDescription]))
         }
         
-        let urlString =
-            OBICardTokenizationManager.urlString + "?" + "apiName=tokenizePaymentMethod&sg=\(sg)&t=\(authToken)&tg=\(guid)&country=US&lang=en"
+        let urlString = domain + "?" + "apiName=tokenizePaymentMethod&&country=US&lang=en"
         let url = URL(string: urlString)!
         let request = NSMutableURLRequest(url: url)
         request.httpMethod = "POST"

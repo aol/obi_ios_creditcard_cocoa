@@ -26,28 +26,19 @@ private let unknownErrorDescription = "Unknown error"
 final public class OBICardTokenizationManager {
     
     public static var urlString = ""
-    
+
     /**
      Tokenize credit/debit card data with results of "getRequestToken" action
      
      - parameter cardNumber: card's id number
      - parameter cvv: card's cvv code
-     - parameter requestToken: request token - result of "getRequestToken" action
-     - parameter authToken: authorization token - result of "getRequestToken" action
-     - parameter guid: user id
-     - parameter sg: client id
      - parameter completionBlock: result block. This block provide result of tokenizatoin or error
      */
-    public class func tokenizePaymentMethod(cardNumber: String,
-                                            cvv: String,
-                                            requestToken: String,
-                                            authToken: String,
-                                            guid: String,
-                                            sg: String,
-                                            completionBlock: @escaping (String?, NSError?) -> Void) {
-        let key = requestToken.replacingOccurrences(of: "-", with: "")
+    public class func tokenizePaymentMethod(cardNumber: String,cvv: String,domain: BaseUrlType,completionBlock: @escaping (String?, NSError?) -> Void) {
+        let uuid = UUID().uuidString
+        let key = uuid.replacingOccurrences(of: "-", with: "")
         let encrypted = EncryptionManager.sharedManager.encryptCard(cardNumber: cardNumber, cvv: cvv, usingKey: key)
-        NetworkManager.shared.tokenize(authToken:authToken, guid: guid, encrypted: encrypted, sg: sg) { (cardToken, error) in
+        NetworkManager.shared.tokenize(encrypted: encrypted, domain: domain.rawValue) { (cardToken, error) in
             if let token = cardToken, !token.isEmpty {
                 completionBlock(token, nil)
             } else {

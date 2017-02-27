@@ -13,6 +13,7 @@
 		7C4528611DEC7549009F9444 /* NSData+AESCrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C45285F1DEC7549009F9444 /* NSData+AESCrypt.m */; };
 		7C9907061CEDBB800091C8B1 /* OBICardTokenization.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C9907051CEDBB800091C8B1 /* OBICardTokenization.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7CFC83011CEDFE20009EA67E /* OBICardTokenizationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CFC83001CEDFE20009EA67E /* OBICardTokenizationManager.swift */; };
+		A04F201B1E64B582003F8C04 /* BaseUrlType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04F201A1E64B582003F8C04 /* BaseUrlType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		7C9907031CEDBB480091C8B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		7C9907051CEDBB800091C8B1 /* OBICardTokenization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBICardTokenization.h; sourceTree = "<group>"; };
 		7CFC83001CEDFE20009EA67E /* OBICardTokenizationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OBICardTokenizationManager.swift; sourceTree = "<group>"; };
+		A04F201A1E64B582003F8C04 /* BaseUrlType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseUrlType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 		7C12CDD71CECAB3F001918C1 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				A04F20191E64B565003F8C04 /* BaseUrlType */,
 				7CFC82FF1CEDFE0C009EA67E /* OBICardTokenizationManager */,
 				7C12CDDE1CECADAF001918C1 /* EncryptionManager */,
 				7C12CDE11CECADC9001918C1 /* NetworkManager */,
@@ -125,6 +128,14 @@
 				7CFC83001CEDFE20009EA67E /* OBICardTokenizationManager.swift */,
 			);
 			name = OBICardTokenizationManager;
+			sourceTree = "<group>";
+		};
+		A04F20191E64B565003F8C04 /* BaseUrlType */ = {
+			isa = PBXGroup;
+			children = (
+				A04F201A1E64B582003F8C04 /* BaseUrlType.swift */,
+			);
+			name = BaseUrlType;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -209,6 +220,7 @@
 			files = (
 				7CFC83011CEDFE20009EA67E /* OBICardTokenizationManager.swift in Sources */,
 				7C4528611DEC7549009F9444 /* NSData+AESCrypt.m in Sources */,
+				A04F201B1E64B582003F8C04 /* BaseUrlType.swift in Sources */,
 				7C12CDE51CECADDF001918C1 /* NetworkManager.swift in Sources */,
 				7C12CDE01CECADB8001918C1 /* EncryptionManager.swift in Sources */,
 			);
