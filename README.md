@@ -12,11 +12,11 @@ Tags(_Versions_) for Cocoa Pods:
 
 To use this library, you need to call the **tokenizePaymentMethod()** with the following parameters:
 
-  **cardNumber**: card's id number
+**cardNumber**: card's id number
   
-  **cvv**: card's cvv code
+**cvv**: card's cvv code
   
-  **domain**: there are 3 domain types to pick from (QA, PROD, DEV), depending on your project state and whether you want to test or go live.
+**domain**: there are 3 domain types to pick from (QA, PROD, DEV), depending on your project state and whether you want to test or go live.
   
 ### Example:  
 
