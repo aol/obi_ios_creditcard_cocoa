@@ -8,11 +8,13 @@ Pod::Spec.new do |s|
 
   s.homepage     = "https://github.com/aol"
 
-  s.license     = "MIT"
+  s.license      = 'Private / Commercial'
 
   s.author    = "AOL"
 
   s.platform     = :ios, "8.0"
+
+  s.ios.deployment_target = '10.0'
   s.source       = { :git => "https://github.com/aol/obi_ios_creditcard_cocoa.git", :tag => s.version }
 
   s.source_files  = "Source/*.{h,m,swift}"
