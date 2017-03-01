@@ -10,7 +10,7 @@ Tags(_Versions_) for Cocoa Pods:
 
 ## USAGE
 
-To use this library, you need to call the **tokenizePaymentMethod()** with the following parameters:
+To use this library, you need to call **tokenizePaymentMethod()** with the following parameters:
 
 **cardNumber**: card's id number
   
