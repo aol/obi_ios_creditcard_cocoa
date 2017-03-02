@@ -37,7 +37,7 @@ final public class OBICardTokenizationManager {
     public class func tokenizePaymentMethod(cardNumber: String,cvv: String,domain: BaseUrlType,completionBlock: @escaping (String?, NSError?) -> Void) {
         let uuid = UUID().uuidString
         let key = uuid.replacingOccurrences(of: "-", with: "")
-        let cardNum = uuid.replacingOccurrences(of: "-", with: "")
+        let cardNum = cardNumber.replacingOccurrences(of: "-", with: "")
         let encrypted = EncryptionManager.sharedManager.encryptCard(cardNumber: cardNum, cvv: cvv, usingKey: key)
         NetworkManager.shared.tokenize(encrypted: encrypted, domain: domain.rawValue) { (cardToken, error) in
             if let token = cardToken, !token.isEmpty {
