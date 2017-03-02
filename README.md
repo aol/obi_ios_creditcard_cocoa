@@ -1,14 +1,18 @@
-##OBI iOS cocoa pod for credit card tokenization
+## Installation with CocoaPods
 
-Tags(_Versions_) for Cocoa Pods:
+Please use CocoaPods to install this library. Run **pod install**, and add the below code in your Podfile
 
-0.0.5 - Swift 2.3, without other pods(CryptoSwift). Only project without workspace.
+```
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '8.0'
 
-0.0.6 - Swift 3.0
+target 'TargetName' do
+pod 'OBICardTokenization', :git => 'https://github.com/aol/obi_ios_creditcard_cocoa.git', :tag => '0.0.14'
+end
+```
 
-0.0.7 - Tokenization URL set outside the library
 
-## USAGE
+## Usage
 
 To use this library, you need to call **tokenizePaymentMethod()** with the following parameters:
 
@@ -32,5 +36,16 @@ OBICardTokenizationManager.tokenizePaymentMethod(cardNumber: cardNumber, cvv: cv
       //use accountNumber 
 })
 ```
+
+##OBI iOS cocoa pod for credit card tokenization
+
+Tags(_Versions_) for Cocoa Pods:
+
+0.0.5 - Swift 2.3, without other pods(CryptoSwift). Only project without workspace.
+
+0.0.6 - Swift 3.0
+
+0.0.7 - Tokenization URL set outside the library
+
 
 
