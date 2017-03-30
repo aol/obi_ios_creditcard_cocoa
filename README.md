@@ -19,12 +19,7 @@
 Please use CocoaPods to install this library. Just add the below code in your Podfile and run **pod install**.
 
 ```
-source 'https://github.com/CocoaPods/Specs.git'
-platform :ios, '8.0'
-
-target 'TargetName' do
-pod 'OBICardTokenization', :git => 'https://github.com/aol/obi_ios_creditcard_cocoa.git', :tag => '0.0.15'
-end
+pod 'OBICardTokenization', '= 0.0.12'
 ```
 
 
@@ -45,6 +40,8 @@ To use this library, you need to call **tokenizePaymentMethod()** with the follo
 ### Example:  
 
 ```swift
+import OBICardTokenization
+
 let cardNumber = "4444-4444-4444-4448"
 let cvv = "123"
 OBICardTokenizationManager.tokenizePaymentMethod(cardNumber: cardNumber, cvv: cvv, domain: .QA, completionBlock: { [weak self] (accountNumber, error) in
