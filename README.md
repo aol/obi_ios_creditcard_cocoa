@@ -1,3 +1,19 @@
+/*
+ 
+ * AMERICA ONLINE CONFIDENTIAL INFORMATION
+ 
+ *
+ 
+ * Copyright (c) 2016 AOL Inc
+ 
+ *
+ 
+ * All Rights Reserved.  Unauthorized reproduction, transmission, or
+ 
+ * distribution of this software is a violation of applicable laws.
+ 
+ */
+
 ## Installation with CocoaPods
 
 Please use CocoaPods to install this library. Just add the below code in your Podfile and run **pod install**.
