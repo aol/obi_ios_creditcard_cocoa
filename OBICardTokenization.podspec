@@ -2,22 +2,22 @@
 
 Pod::Spec.new do |s|
 
-  s.name         = "OBICardTokenization"
-  s.version      = "0.0.16”
-  s.summary      = "Card tokenization framework"
+  s.name         = 'OBICardTokenization'
+  s.version      = '0.0.16'
+  s.summary      = 'Card tokenization framework'
 
-  s.homepage     = "https://github.com/aol"
+  s.homepage     = 'https://github.com/aol'
 
-  s.license      = { :type => "AOL", :text => "Copyright 2017, AOL Inc." }
+  s.license      = { :type => 'AOL', :text => 'Copyright 2017, AOL Inc.' }
 
-  s.author    = "AOL"
+  s.author    = 'AOL'
 
-  s.platform     = :ios, "8.0"
+  s.platform     = :ios, '8.0'
 
   s.ios.deployment_target = '8.0'
-  s.source       = { :git => "https://github.com/aol/obi_ios_creditcard_cocoa.git", :tag => s.version }
+  s.source       = { :git => 'https://github.com/aol/obi_ios_creditcard_cocoa.git', :tag => s.version }
 
-  s.source_files  = "Source/*.{h,m,swift}"
+  s.source_files  = 'Source/*.{h,m,swift}'
   s.requires_arc = true
 
 end
