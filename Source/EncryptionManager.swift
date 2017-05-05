@@ -36,4 +36,17 @@ final class EncryptionManager {
             return ""
         }
     }
+    
+    func encryptBankAccount(accountNumber: String, usingKey: String) -> String {
+        var data = accountNumber.data(using: String.Encoding.utf8)!
+        let count = 16 - data.count % 16
+        let emptyBytes: [UInt8] = Array(repeating: 0, count: count)
+        data.append(emptyBytes, count: count)
+        
+        if let encryptedData = (data as NSData).aes128Encrypt(withKey32: usingKey) {
+            return encryptedData.base64EncodedString(options: [])
+        } else {
+            return ""
+        }
+    }
 }
