@@ -35,11 +35,17 @@ final public class OBICardTokenizationManager {
     public class func tokenizeCard(cardNumber: String, cvv: String, domain: BaseUrlType, completionBlock: @escaping (String?, NSError?) -> Void) {
         let uuid = UUID().uuidString
         let key = removeUnwantedChars(str: uuid)
+        let cardType = CardSystem(cardNumber: cardNumber)
         let cardNum = removeUnwantedChars(str: cardNumber)
         let encrypted = EncryptionManager.sharedManager.encryptCard(cardNumber: cardNum, cvv: cvv, usingKey: key)
         NetworkManager.shared.tokenize(encrypted: encrypted, domain: domain.rawValue) { (cardToken, error) in
             if let token = cardToken, !token.isEmpty {
-                completionBlock(token + ";" + key, nil)
+                let finaltoken = "\(token);\(key);;\(cardType.rawValue.uppercased())"
+                if let data = (finaltoken).data(using: String.Encoding.utf8) {
+                    let base64 = data.base64EncodedString(options: NSData.Base64EncodingOptions(rawValue: 0))
+                    completionBlock(base64, nil)
+                }
+                
             } else {
                 completionBlock(nil, error ?? errorFromString(nil))
             }
@@ -59,7 +65,11 @@ final public class OBICardTokenizationManager {
         let encrypted = EncryptionManager.sharedManager.encryptBankAccount(accountNumber: accountNumber, usingKey: key)
         NetworkManager.shared.tokenize(encrypted: encrypted, domain: domain.rawValue) { (cardToken, error) in
             if let token = cardToken, !token.isEmpty {
-                completionBlock(token + ";" + key, nil)
+                let finaltoken = "\(token);\(key);;CHECKING"
+                if let data = (finaltoken).data(using: String.Encoding.utf8) {
+                    let base64 = data.base64EncodedString(options: NSData.Base64EncodingOptions(rawValue: 0))
+                    completionBlock(base64, nil)
+                }
             } else {
                 completionBlock(nil, error ?? errorFromString(nil))
             }
@@ -79,4 +89,7 @@ private extension OBICardTokenizationManager {
             code: 1,
             userInfo: [NSLocalizedDescriptionKey: errorString ?? unknownErrorDescription])
     }
+    
+    
+    
 }

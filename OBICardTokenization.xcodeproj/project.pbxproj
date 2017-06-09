@@ -14,6 +14,7 @@
 		7C9907061CEDBB800091C8B1 /* OBICardTokenization.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C9907051CEDBB800091C8B1 /* OBICardTokenization.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7CFC83011CEDFE20009EA67E /* OBICardTokenizationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CFC83001CEDFE20009EA67E /* OBICardTokenizationManager.swift */; };
 		A04F201B1E64B582003F8C04 /* BaseUrlType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04F201A1E64B582003F8C04 /* BaseUrlType.swift */; };
+		CE9F72581EEA19F700820D16 /* CardSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9F72571EEA19F700820D16 /* CardSystem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		7C9907051CEDBB800091C8B1 /* OBICardTokenization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBICardTokenization.h; sourceTree = "<group>"; };
 		7CFC83001CEDFE20009EA67E /* OBICardTokenizationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OBICardTokenizationManager.swift; sourceTree = "<group>"; };
 		A04F201A1E64B582003F8C04 /* BaseUrlType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseUrlType.swift; sourceTree = "<group>"; };
+		CE9F72571EEA19F700820D16 /* CardSystem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardSystem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 		7C12CDD71CECAB3F001918C1 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				CE9F72591EEA1A4500820D16 /* CardSystem */,
 				A04F20191E64B565003F8C04 /* BaseUrlType */,
 				7CFC82FF1CEDFE0C009EA67E /* OBICardTokenizationManager */,
 				7C12CDDE1CECADAF001918C1 /* EncryptionManager */,
@@ -136,6 +139,14 @@
 				A04F201A1E64B582003F8C04 /* BaseUrlType.swift */,
 			);
 			name = BaseUrlType;
+			sourceTree = "<group>";
+		};
+		CE9F72591EEA1A4500820D16 /* CardSystem */ = {
+			isa = PBXGroup;
+			children = (
+				CE9F72571EEA19F700820D16 /* CardSystem.swift */,
+			);
+			name = CardSystem;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,6 +233,7 @@
 				7C4528611DEC7549009F9444 /* NSData+AESCrypt.m in Sources */,
 				A04F201B1E64B582003F8C04 /* BaseUrlType.swift in Sources */,
 				7C12CDE51CECADDF001918C1 /* NetworkManager.swift in Sources */,
+				CE9F72581EEA19F700820D16 /* CardSystem.swift in Sources */,
 				7C12CDE01CECADB8001918C1 /* EncryptionManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
