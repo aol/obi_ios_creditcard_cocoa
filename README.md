@@ -1,16 +1,3 @@
-/*
- 
- * AMERICA ONLINE CONFIDENTIAL INFORMATION
- 
- *
- 
- * Copyright (c) 2016 AOL Inc
- 
- *
- 
- * All Rights Reserved. 
- 
- */
 
 ## Installation with CocoaPods
 
