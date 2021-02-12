@@ -1,4 +1,7 @@
 
+# ARCHIVED
+
+
 ## Installation with CocoaPods
 
 Please use CocoaPods to install this library. Just add the below code in your Podfile and run **pod install**.
